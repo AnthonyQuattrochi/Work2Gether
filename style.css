@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    background-color: #f0f0f0;
+    background-color: #f7e9dd;
     font-family: 'Open Sans', sans-serif;
     color: rgb(51, 51, 51);
 }
@@ -15,9 +15,28 @@ body {
     margin-left: 5%;
 }
 
+.arrow-dropping {
+    width: 2%;
+    height: 2%;
+    float:right;
+}
+
 .orga {
     display: flex;
     margin-bottom: 100px;
+    font-family: 'Outfit', sans-serif;
+    margin: 0px auto;
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 5%;
+    padding: 2%; 
+    box-shadow: inset 2px 5px 18px #e0e0e0,
+            inset -5px -5px 18px #fbfbfb;
+    transition: transform .5s;
+}
+
+.orga:hover {
+    transform: scale(1.1);
 }
 
 img[src="img/scrum.png"] {
@@ -33,11 +52,23 @@ img[src="img/Orga.PNG"] {
 }
 
 .p_orga {
-    width: 45%;
+    width: 40%;
 }
 
-img[alt="orga"] {
+.img_orga {
     border-radius: 20px;
+    width: 40%;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s;
 }
 
 
@@ -86,9 +117,8 @@ hr {
     font-size: 1.333rem;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
     border-radius: 50px;
-    background: #f0f0f0;
-    box-shadow:  6px 6px 12px #d9d9d9,
-                -6px -6px 12px #ffffff;
+    background: #f7e9dd;
+    box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px #ffffff;
 }
 
 .boutonMenu:not(#active):hover {
@@ -112,9 +142,8 @@ hr {
     margin: 0px auto;
     border-radius: 20px;
     margin-top: 5%;
-    padding: 2%; 
-    box-shadow:  27px 27px 34px #dddddd,
-             -27px -27px 34px #ffffff;
+    padding: 2%;
+    box-shadow: inset 5px 5px 18px #d9cdc2, inset -5px -5px 18px #fffff8;
 }
 
 #evaluation .neumorAvatar {
@@ -124,8 +153,7 @@ hr {
     margin-top: 6%;
     border-radius: 123px;
     background: #e0e0e0;
-    box-shadow:  20px 20px 60px #cccccc,
-             -20px -20px 60px #ffffff;
+    box-shadow: inset 5px 5px 18px #d9cdc2, inset -5px -5px 18px #fffff8;
 }
 
 #evaluation .neumorphisme_img {
@@ -133,12 +161,12 @@ hr {
     width: 150px;
     border-radius: 100%;
     margin: 25px;
-    box-shadow:  20px 20px 60px #cccccc,
-             -20px -20px 60px #ffffff;
+    box-shadow: inset 5px 5px 18px #d9cdc2, inset -5px -5px 18px #fffff8;
 }
 
 #evaluation #eval_titre {
     font-family: 'Rubik', sans-serif;
+    color: #fc0;
 }
 
 #evaluation #text_eval {
@@ -155,23 +183,16 @@ hr {
     display: flex;
 }
 
-#evaluation .icon {
-    height: 50px; 
-    width: 50px; 
-    background-color: rgb(231, 199, 129);
+.icon {
+    height: 50px;
+    width: 50px;
+    background-color: red;
     border-radius: 10px;
-    margin:0px auto; 
-    text-align: center;
-    vertical-align: middle;
-    display: table;
-}
-
-#evaluation .icon span {
-    vertical-align:middle;
-    display: table-cell;
+    margin: 0px auto;
 }
 
 #evaluation span {
+    color: #fc0;
     font-weight: bold;
 }
 
@@ -185,7 +206,7 @@ hr {
     padding-top: 200px;
     padding-bottom: 100px;
     box-shadow: 0px 0px 5px rgb(0 0 0 / 33%);
-    background-color: #f7ddb7;
+    background-color: #fceee3;
 }
 
 #index_introduction div {
@@ -287,43 +308,32 @@ p {
 
 
 /*---------------------------------------------Zen-----------------------*/
-
-#well-being {
-    display: flex;
+#well-being{
     font-family: 'Outfit', sans-serif;
     width: 80%;
     margin: 0px auto;
     border-radius: 20px;
     margin-top: 5%;
-    padding: 2%;
-    box-shadow: inset 2px 5px 18px #e0e0e0, inset -5px -5px 18px #fbfbfb;
+    padding: 2%; 
+    box-shadow: inset 2px 5px 18px #e0e0e0,
+            inset -5px -5px 18px #fbfbfb;
+    animation: appear 1s ease-out both;
 }
 
 #activite {
     display: flex;
 }
 
-@keyframes fade {
-    From {
-        Opacity: 1;
-    }
-    To {
-        Opacity: 0;
-    }
-}
 
 #activite div {
     display: flex;
     width: 300px;
     height: 200px;
     justify-content: space-between;
+
 }
 
-#well-being p {
-    block-size: 200px;
-}
-
-img {
+img{
     height: 100px;
     width: 100px;
 }
