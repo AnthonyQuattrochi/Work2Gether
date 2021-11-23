@@ -101,13 +101,45 @@ p{
 
 
 /*---------------------------------------------Zen-----------------------*/
-
-#sondage , #fete, #sport, #culture ,#choix-cours {
-    block-size: 300px;
-    align-items:center;
-    justify-content: space-between;
+#well-being{
+    display: flex;
+    font-family: 'Outfit', sans-serif;
+    width: 80%;
+    margin: 0px auto;
+    border-radius: 20px;
+    margin-top: 5%;
+    padding: 2%; 
+    box-shadow: inset 2px 5px 18px #e0e0e0,
+            inset -5px -5px 18px #fbfbfb;
+}
+#activite{
+    display: flex;
 }
 
-#well-being img{
-    width: 200px;
+
+@keyframes fade {
+    From {
+    Opacity : 1 ;
+    }
+    To {
+    Opacity : 0 ;
+    }
+    }
+
+#activite div {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    justify-content: space-between;
+
+    
+}
+
+
+#well-being p{
+    block-size: 200px;
+}
+img{
+    height: 100px;
+    width: 100px;
 }
