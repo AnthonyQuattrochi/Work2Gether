@@ -41,3 +41,70 @@ header{
     margin-right: 30px;
     margin-left: 30px;
 }
+
+/* -------------------------------------- EVALUATION -------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Rubik:wght@500&display=swap');
+
+#evaluation {
+    display: flex;
+    font-family: 'Outfit', sans-serif;
+    width: 80%;
+    margin: 0px auto;
+    border-radius: 20px;
+    margin-top: 5%;
+    padding: 2%; 
+    box-shadow: inset 2px 5px 18px #e0e0e0,
+            inset -5px -5px 18px #fbfbfb;
+}
+.neumorAvatar {
+    height: 200px;
+    width: 200px;
+    margin: 40px;
+    margin-top: 6%;
+    border-radius: 123px;
+    background: #e0e0e0;
+    box-shadow: 25px 25px 50px #cacaca,
+        -25px -25px 50px #f6f6f6;
+}
+
+.neumorphisme_img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    margin: 25px;
+    box-shadow: 9px 9px 18px #a8a8a8,
+        -9px -9px 18px #ffffff;
+}
+
+#eval_titre {
+    font-family: 'Rubik', sans-serif;
+    color: #fc0; 
+}
+
+#text_eval {
+    width: 90%; 
+    text-align: justify;
+}
+
+.column {
+    flex-direction: column;
+    margin-top: 5%;
+} 
+
+.flex {
+    display: flex; 
+}
+
+.icon {
+    height: 50px; 
+    width: 50px; 
+    background-color: red;
+    border-radius: 10px;
+    margin:0px auto; 
+}
+
+#evaluation span {
+    color: #fc0; 
+    font-weight: bold;
+} 
+
