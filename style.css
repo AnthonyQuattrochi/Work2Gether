@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     font-size: 16px;
-    background-color: #f7e9dd;
+    background-color: #f0f0f0;
     font-family: 'Open Sans', sans-serif;
     color: rgb(51, 51, 51);
 }
@@ -79,7 +79,7 @@ hr{
     font-size: 1.333rem;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
     border-radius: 50px;
-    background: #f7e9dd;
+    background: #f0f0f0;
     box-shadow:  6px 6px 12px #d9d9d9,
                 -6px -6px 12px #ffffff;
 }
@@ -104,8 +104,8 @@ hr{
     border-radius: 20px;
     margin-top: 5%;
     padding: 2%; 
-    box-shadow: inset 5px 5px 18px #d9cdc2,
-            inset -5px -5px 18px #fffff8;
+    box-shadow:  27px 27px 34px #dddddd,
+             -27px -27px 34px #ffffff;
 }
 .neumorAvatar {
     height: 200px;
@@ -114,8 +114,8 @@ hr{
     margin-top: 6%;
     border-radius: 123px;
     background: #e0e0e0;
-    box-shadow: inset 5px 5px 18px #d9cdc2,
-            inset -5px -5px 18px #fffff8;
+    box-shadow:  20px 20px 60px #cccccc,
+             -20px -20px 60px #ffffff;
 }
 
 .neumorphisme_img {
@@ -123,13 +123,12 @@ hr{
     width: 150px;
     border-radius: 100%;
     margin: 25px;
-    box-shadow: inset 5px 5px 18px #d9cdc2,
-            inset -5px -5px 18px #fffff8;
+    box-shadow:  20px 20px 60px #cccccc,
+             -20px -20px 60px #ffffff;
 }
 
 #eval_titre {
     font-family: 'Rubik', sans-serif;
-    color: #fc0; 
 }
 
 #text_eval {
@@ -149,13 +148,20 @@ hr{
 .icon {
     height: 50px; 
     width: 50px; 
-    background-color: red;
+    background-color: rgb(231, 199, 129);
     border-radius: 10px;
     margin:0px auto; 
+    text-align: center;
+    vertical-align: middle;
+    display: table;
+}
+
+.icon span {
+    vertical-align:middle;
+    display: table-cell;
 }
 
 #evaluation span {
-    color: #fc0; 
     font-weight: bold;
 } 
 
@@ -168,7 +174,7 @@ hr{
     padding-top: 200px;
     padding-bottom: 100px;
     box-shadow: 0px 0px 5px rgb(0 0 0 / 33%);
-    background-color: #fceee3;
+    background-color: #f7ddb7;
 }
 #index_introduction div{
     align-self: center;
