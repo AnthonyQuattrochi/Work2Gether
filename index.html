@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="javascript.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
             <img src="./img/LogoW2G_2.png" alt="LogoW2G">
         </div>
         <div class="menu">
-            <button class="boutonMenu">
+            <button class="boutonMenu" id="active">
                 <div>Accueil</div>
             </button>
             <button class="boutonMenu">
@@ -29,9 +29,11 @@
             <button class="boutonMenu">
                 <div>Infrastructure</div>
             </button>
-            <button class="boutonMenu">
+            <a href="technologies.html">
+                <button class="boutonMenu">
                 <div>Technologies</div>
             </button>
+            </a>
         </div>
     </header>
 
@@ -57,9 +59,7 @@
 
             <div class="column">
                 <h2 id="eval_titre">Un système d'évaluation novatrice</h2>
-                <p id="text_eval">Chez W2G, nous pensons que vos <span>compétences</span> importent davantage que vos notes ! </br>A la place, nous vous proposons un système
-                    d’évaluation entièrement basé sur vos efforts !
-                    En effet, chaque module possède une série de <span>cinq</span> grades correspondant à un niveau de compétence.
+                <p id="text_eval">Chez W2G, nous pensons que vos <span>compétences</span> importent davantage que vos notes ! </br>A la place, nous vous proposons un système d’évaluation entièrement basé sur vos efforts ! En effet, chaque module possède une série de <span>cinq</span>                    grades correspondant à un niveau de compétence.
                 </p>
 
                 <div class="flex">
@@ -90,15 +90,12 @@
 
         <article id="project">
             <h2>Apprentissage à la carte</h2>
-            <section id="first-block">   
+            <section id="first-block">
                 <p id="project-content">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis hic culpa voluptatum a temporibus nostrum molestiae,
-                    sunt obcaecati aperiam architecto numquam nisi omnis vero nemo soluta eius veritatis voluptates eaque. Lorem ipsum, dolor
-                    sit amet consectetur adipisicing elit. Omnis minus, dolorem ratione eaque corporis odio ipsa voluptates consequuntur reiciendis
-                    dignissimos esse modi? Iste accusantium nulla aperiam corrupti porro animi fugit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis hic culpa voluptatum a temporibus nostrum molestiae,
-                    sunt obcaecati aperiam architecto numquam nisi omnis vero nemo soluta eius veritatis voluptates eaque. Lorem ipsum, dolor
-                    sit amet consectetur adipisicing elit. Omnis minus, dolorem ratione eaque corporis odio ipsa voluptates consequuntur reiciendis
-                    dignissimos esse modi? Iste accusantium nulla aperiam corrupti porro animi fugit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis hic culpa voluptatum a temporibus nostrum molestiae, sunt obcaecati aperiam architecto numquam nisi omnis vero nemo soluta eius veritatis voluptates eaque. Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Omnis minus, dolorem ratione eaque corporis odio ipsa voluptates consequuntur reiciendis dignissimos esse modi? Iste accusantium nulla aperiam corrupti porro animi fugit. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Corporis hic culpa voluptatum a temporibus nostrum molestiae, sunt obcaecati aperiam architecto numquam nisi omnis vero nemo soluta eius veritatis voluptates eaque. Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Omnis minus, dolorem ratione eaque corporis odio ipsa voluptates consequuntur reiciendis dignissimos esse modi? Iste accusantium nulla aperiam corrupti porro animi fugit.
                 </p>
                 <div>
                     <img src="./img/Groupe-project.jpeg" alt="placeholder">
@@ -106,35 +103,32 @@
             </section>
         </article>
 
-        <article id="well-being" >
+        <article id="well-being">
             <p>Votre bien-être est notre principale préoccupation. Pour celà nous mettons en place différents outils pour vous rendre la vie dans notre campus plus agréable:</p>
             <div id="choix-cours">
                 <p id="pfete">
                 </p>
                 <img src="./img/choix.png" alt="choix">
             </div>
-            <div id = "sondage">
-                
-                <p>Chaque trimestre, sera organisé un sondage pour évaluer votre niveau de morale. 
-                    Vous serez amenés à nous donner vos ressentis et les axes d’amélioration 
-                    de l’école W2G pour votre confort et votre bien être au sein du campus.</p>
-                    <img src="./img/sondage.png" alt="sondage" >
-                </div>
-                <div><p>Sans oublier bien sûr, mais évidemment  les activités extra scolaires:</p></div> 
+            <div id="sondage">
+
+                <p>Chaque trimestre, sera organisé un sondage pour évaluer votre niveau de morale. Vous serez amenés à nous donner vos ressentis et les axes d’amélioration de l’école W2G pour votre confort et votre bien être au sein du campus.</p>
+                <img src="./img/sondage.png" alt="sondage">
+            </div>
+            <div>
+                <p>Sans oublier bien sûr, mais évidemment les activités extra scolaires:</p>
+            </div>
             <div id=activite>
-               
-                <div id ="fete">
-                    
-                    <img src="./img/sifflet-de-fete.png" alt="fete" id ="fete">
+
+                <div id="fete">
+
+                    <img src="./img/sifflet-de-fete.png" alt="fete" id="fete">
                 </div>
-                <div id ="cours">
-                    <p>Il y a différente manière d'assister aux cours que selon vos convenances,
-                     à savoir en présentiel et distanciel, 
-                    ou tout simplement en visionnant les cours enregistrer. Ainsi, 
-                    vous pourrez être en distanciel, présentiel ou même en hybride.</p>
+                <div id="cours">
+                    <p>Il y a différente manière d'assister aux cours que selon vos convenances, à savoir en présentiel et distanciel, ou tout simplement en visionnant les cours enregistrer. Ainsi, vous pourrez être en distanciel, présentiel ou même en hybride.</p>
                     <img src="" alt="cours">
                 </div>
-                <div id= "sport">
+                <div id="sport">
                     <p>Nous proposons aussi diverses activités sportives ainsi qu’un accès illimité à notre grande salle de musculation .
                     </p>
                     <img src="./img/sport.png" alt="sport">

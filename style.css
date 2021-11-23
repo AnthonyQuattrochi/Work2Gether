@@ -90,7 +90,7 @@ hr {
     box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px #ffffff;
 }
 
-.boutonMenu:hover {
+.boutonMenu:not(#active):hover {
     box-shadow: inset 6px 6px 12px #d9d9d9, inset -6px -6px 12px #ffffff;
 }
 
@@ -352,4 +352,8 @@ img {
     box-shadow: -10px -10px 20px #bebebe, 10px 10px 20px #ffffff;
     padding: 25px;
     margin-top: 50px;
+}
+
+#active {
+    background: #f0d6c0;
 }
