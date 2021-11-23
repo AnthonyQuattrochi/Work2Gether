@@ -7,7 +7,7 @@ header{
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 .menu{
     display: flex;
@@ -40,4 +40,12 @@ header{
     margin: auto;
     margin-right: 30px;
     margin-left: 30px;
+}
+
+#first-block{
+    display: flex;
+}
+
+#first-block img{
+    margin: 1em;
 }
