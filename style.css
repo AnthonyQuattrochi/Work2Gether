@@ -295,7 +295,7 @@ p {
         -25px -25px 50px #f6f6f6;
 }
 
-/*---------------------------------------------Zen-----------------------*/
+/*-----------------------------------------------------------------Zen------------------------------------------------------------------*/
 
 #well-being {
     font-family: 'Outfit', sans-serif;
@@ -317,13 +317,30 @@ p {
     width: 300px;
     height: 200px;
     justify-content: space-between;
+    box-shadow: 0 0 0  0 rgb(253, 253, 4);
+    
+}
+
+#activite div :hover{
+    animation: pulse 1.3s;
+}
+
+@keyframes pulse {
+    to{
+        box-shadow: 0 0 0 18px rgba(206, 241, 7, 0.137);
+    }
+    
 }
 
 #activite img {
-    height: 100px;
-    width: 100px;
-}
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        margin: 25px;
+        box-shadow: 9px 9px 18px #a8a8a8, -9px -9px 18px #ffffff;
+    }
 
+    
 
 /* --------------------------------------- Technologies ---------------------------------------------- */
 
@@ -333,7 +350,7 @@ p {
 
 #blockflex {
     display: flex;
-    justify-content: space-between;
+    
     text-align: center;
 }
 
