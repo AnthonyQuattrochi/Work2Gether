@@ -117,7 +117,7 @@ hr {
              -27px -27px 34px #ffffff;
 }
 
-.neumorAvatar {
+#evaluation .neumorAvatar {
     height: 200px;
     width: 200px;
     margin: 40px;
@@ -128,7 +128,7 @@ hr {
              -20px -20px 60px #ffffff;
 }
 
-.neumorphisme_img {
+#evaluation .neumorphisme_img {
     height: 150px;
     width: 150px;
     border-radius: 100%;
@@ -137,25 +137,25 @@ hr {
              -20px -20px 60px #ffffff;
 }
 
-#eval_titre {
+#evaluation #eval_titre {
     font-family: 'Rubik', sans-serif;
 }
 
-#text_eval {
+#evaluation #text_eval {
     width: 90%;
     text-align: justify;
 }
 
-.column {
+#evaluation .column {
     flex-direction: column;
     margin-top: 5%;
 }
 
-.flex {
+#evaluation .flex {
     display: flex;
 }
 
-.icon {
+#evaluation .icon {
     height: 50px; 
     width: 50px; 
     background-color: rgb(231, 199, 129);
@@ -166,7 +166,7 @@ hr {
     display: table;
 }
 
-.icon span {
+#evaluation .icon span {
     vertical-align:middle;
     display: table-cell;
 }
