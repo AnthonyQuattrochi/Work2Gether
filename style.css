@@ -77,22 +77,55 @@ p{
 }
 
 /* --------------------------------------- Article Projet ---------------------------------------*/
+
+#project {
+    font-family: 'Outfit', sans-serif;
+    width: 80%;
+    margin: 0px auto;
+    border-radius: 20px;
+    margin-top: 5%;
+    padding: 2%; 
+    box-shadow: inset 2px 5px 18px #e0e0e0,
+            inset -5px -5px 18px #fbfbfb;
+    animation: appear 1s ease-out both;
+}
+
 #first-block{
     display: flex;
 }
 
 #first-block img{
-    margin: 1rem;
-    border-radius: 153px;
-    background: linear-gradient(145deg, #cacaca, #f0f0f0);
-    box-shadow:  20px 20px 39px #9d9d9d,
-                -20px -20px 39px #ffffff;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    margin: 25px;
+    box-shadow: 9px 9px 18px #a8a8a8,
+        -9px -9px 18px #ffffff;
 }
 
 #first-block div{
-    border-radius: 153px;
-    background: linear-gradient(145deg, #cacaca, #f0f0f0);
-    box-shadow:  14px 14px 28px #9d9d9d,
-                 -14px -14px 28px #ffffff;
+    height: 200px;
+    width: 200px;
+    border-radius: 123px;
+    background: #e0e0e0;
+    box-shadow: 25px 25px 50px #cacaca,
+        -25px -25px 50px #f6f6f6;
+    animation : appear 1s ease-out both;
 }
 
+#project h2{
+    animation: appear 1s ease-out 1 both;
+}
+
+#first-block p {
+    animation: appear 1s ease-out 1 both;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
