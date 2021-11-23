@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css"  href="style.css"/>
+    <script src = "reveal.js" defer></script>
     <title>W2G - Organisation</title>
 </head>
 <body>
-    <nav>
-
-    </nav>
     <header>
-        <h1 id="title_orga">Organisation</h1>
+        <div class="LogoTitre">
+            <img src="./img/LogoW2G_2.png" alt="">
+        </div>
+        <div class="menu">
+            <div class="boutonMenu">
+                <div>Accueil</div>
+            </div>
+            <div class="boutonMenu">
+                <div>Formation</div>
+            </div>
+            <div class="boutonMenu">
+                <div>Infrastructure</div>
+            </div>
+        </div>
     </header>
+    <h1 id="title_orga">Organisation</h1>
     <div class="index_articles">
         <article class="orga">
-            <img src="img/scrum.png" alt="orga" width="45%"/>
+            <h2>Méthode SCRUM</h2>
+            <img src="img/down-arrow.png" alt="down-arrow" class="arrow-dropping"/>
+            <img src="img/scrum.png" alt="orga" class="img_orga"/>
             <p class="p_orga">Nous avons choisi le framework Scrum pour notre gestion de projet agile. <br>
                 La méthode Scrum est une méthode de gestion / développement produit ou projet, 
                 utilisée dans le domaine du développement informatique (logiciels, services, applications mobiles, 
@@ -31,7 +45,9 @@
                 La méthode Scrum fait partie des méthodes de gestion de projet dites "agiles" et vues comme des alternatives 
                 à la gestion de projet "traditionnelle" davantage planifiée et structurée sur de longues périodes.</p>
         </article>
-        <article class="orga">
+        <article class="orga reveal">
+            <h2>Trello et Scrum Board</h2>
+            <img src="img/down-arrow.png" alt="down-arrow" class="arrow-dropping"/>
             <p class="p_orga">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua. Orci eu lobortis elementum 
                 nibh tellus molestie nunc non. A diam sollicitudin tempor id eu nisl nunc mi. 
@@ -41,7 +57,7 @@
                 feugiat pretium. Massa tincidunt nunc pulvinar sapien et ligula. Ultrices gravida dictum 
                 fusce ut placerat orci nulla pellentesque. Ut faucibus pulvinar elementum integer enim neque volutpat. 
                 Dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu.</p>
-            <img src="img/Orga.PNG" alt="orga" width="45%"/>
+            <img src="img/Orga.PNG" alt="orga" class="img_orga"/>
         </article>
     </div>
 </body>
