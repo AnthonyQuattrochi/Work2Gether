@@ -269,7 +269,6 @@ p{
 
 /*---------------------------------------------Zen-----------------------*/
 #well-being{
-    display: flex;
     font-family: 'Outfit', sans-serif;
     width: 80%;
     margin: 0px auto;
@@ -278,20 +277,13 @@ p{
     padding: 2%; 
     box-shadow: inset 2px 5px 18px #e0e0e0,
             inset -5px -5px 18px #fbfbfb;
+    animation: appear 1s ease-out both;
 }
 #activite{
     display: flex;
 }
 
 
-@keyframes fade {
-    From {
-    Opacity : 1 ;
-    }
-    To {
-    Opacity : 0 ;
-    }
-    }
 
 #activite div {
     display: flex;
@@ -299,13 +291,8 @@ p{
     height: 200px;
     justify-content: space-between;
 
-    
 }
 
-
-#well-being p{
-    block-size: 200px;
-}
 img{
     height: 100px;
     width: 100px;
