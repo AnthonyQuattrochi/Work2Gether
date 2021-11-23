@@ -67,6 +67,8 @@ hr{
 .LogoTitre img{
     height: 80px;
 }
+
+/* ----------------------- NAVIGATION ---------------------------*/
 .boutonMenu{
     transition: 1s;
     display: flex;
@@ -102,8 +104,8 @@ hr{
     border-radius: 20px;
     margin-top: 5%;
     padding: 2%; 
-    box-shadow: inset 2px 5px 18px #e0e0e0,
-            inset -5px -5px 18px #fbfbfb;
+    box-shadow: inset 5px 5px 18px #d9cdc2,
+            inset -5px -5px 18px #fffff8;
 }
 .neumorAvatar {
     height: 200px;
@@ -112,8 +114,8 @@ hr{
     margin-top: 6%;
     border-radius: 123px;
     background: #e0e0e0;
-    box-shadow: 25px 25px 50px #cacaca,
-        -25px -25px 50px #f6f6f6;
+    box-shadow: inset 5px 5px 18px #d9cdc2,
+            inset -5px -5px 18px #fffff8;
 }
 
 .neumorphisme_img {
@@ -121,8 +123,8 @@ hr{
     width: 150px;
     border-radius: 100%;
     margin: 25px;
-    box-shadow: 9px 9px 18px #a8a8a8,
-        -9px -9px 18px #ffffff;
+    box-shadow: inset 5px 5px 18px #d9cdc2,
+            inset -5px -5px 18px #fffff8;
 }
 
 #eval_titre {
@@ -156,6 +158,8 @@ hr{
     color: #fc0; 
     font-weight: bold;
 } 
+
+/*-------------------------- ACCUEIL --------------------------- */
 
 #index_introduction{
     display: flex;
