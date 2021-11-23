@@ -41,3 +41,11 @@ header{
     margin-right: 30px;
     margin-left: 30px;
 }
+
+#first-block{
+    display: flex;
+}
+
+#first-block img{
+    margin: 1em;
+}
