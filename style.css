@@ -325,7 +325,7 @@ p {
 }
 
 #activite div :hover{
-    animation: pulse 1.4s;
+    animation: pulse 1.4s forwards;
 }
 
 @keyframes pulse {
@@ -343,7 +343,21 @@ p {
         box-shadow: 9px 9px 18px #a8a8a8, -9px -9px 18px #ffffff;
     }
 
-    
+#pAct {
+    margin-top: 50px;
+    text-align: center;
+    animation: apparition .8s ease-out;
+}
+@keyframes apparition {
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 
 /* --------------------------------------- Technologies ---------------------------------------------- */
 
