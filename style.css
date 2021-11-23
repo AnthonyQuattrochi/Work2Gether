@@ -54,13 +54,51 @@ header{
     margin-left: 30px;
 }
 
+/* --------------------------------------- Taille du texte ---------------------------------------*/
+
+h1{
+    size: 4.209rem;
+}
+
+h2{
+    size: 3.157rem;
+}
+
+h3{
+    size: 2.369rem;
+}
+
+h4{
+    size: 1.777rem;
+}
+
+p{
+    size: 1rem;
+}
+
+/* --------------------------------------- Article Projet ---------------------------------------*/
 #first-block{
     display: flex;
 }
 
 #first-block img{
-    margin: 1em;
+
+   
+    margin: 1rem;
+    border-radius: 153px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  20px 20px 39px #9d9d9d,
+                -20px -20px 39px #ffffff;
 }
+
+#first-block div{
+    border-radius: 153px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  14px 14px 28px #9d9d9d,
+                 -14px -14px 28px #ffffff;
+}
+
+
 
 /*---------------------------------------------Zen-----------------------*/
 
