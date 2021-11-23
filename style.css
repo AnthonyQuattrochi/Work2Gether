@@ -7,7 +7,7 @@ header{
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 .menu{
     display: flex;
