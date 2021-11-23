@@ -123,7 +123,7 @@ hr {
     box-shadow:  6px 6px 12px #cccccc,
              -6px -6px 12px #ffffff;
 }
-.boutonMenu:hover{
+.boutonMenu:not(#active):hover{
     box-shadow: inset 6px 6px 12px #cccccc,
             inset -6px -6px 12px #ffffff;
 }
@@ -172,7 +172,6 @@ hr {
 
 #evaluation #eval_titre {
     font-family: 'Rubik', sans-serif;
-    color: #fc0;
 }
 
 #evaluation #text_eval {
@@ -189,16 +188,20 @@ hr {
     display: flex;
 }
 
-.icon {
+#evaluation .icon {
     height: 50px;
     width: 50px;
-    background-color: red;
+    background-color: #ffcc00;
     border-radius: 10px;
     margin: 0px auto;
+    font-size: 1.333rem; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }
 
+
 #evaluation span {
-    color: #fc0;
     font-weight: bold;
 }
 
@@ -378,5 +381,5 @@ p {
 }
 
 #active {
-    background: #f0d6c0;
+    background: #fafafa;
 }
