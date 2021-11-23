@@ -1,3 +1,15 @@
 body {
     background-color: rgb(204, 204, 204);
 }
+
+
+/* --------------------------------------- Organisation ---------------------------------------------- */
+
+.orga {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.p_orga {
+    width: 45%;
+}
