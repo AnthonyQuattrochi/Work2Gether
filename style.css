@@ -1,8 +1,20 @@
+
 body{
     margin: 0;
     padding: 15px;
     font-size: 16px;
 }
+/* --------------------------------------- Organisation ---------------------------------------------- */
+
+.orga {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.p_orga {
+    width: 45%;
+}
+
 header{
     display: flex;
     justify-content: space-between;
