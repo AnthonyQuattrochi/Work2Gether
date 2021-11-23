@@ -4,22 +4,45 @@ body{
     padding: 15px;
     font-size: 16px;
 }
+
 /* --------------------------------------- Organisation ---------------------------------------------- */
+
+#title_orga {
+    margin-bottom: 50px;
+    margin-left: 5%;
+}
 
 .orga {
     display: flex;
     margin-bottom: 100px;
 }
 
+img[src="img/scrum.png"]{
+    margin-right: 50px;
+    width: 800px;
+    height: 314px;
+}
+
+img[src="img/Orga.PNG"]{
+    margin-left: 50px;
+    width: 742.4px;
+    height: 354.4px;
+}
+
 .p_orga {
     width: 45%;
 }
+
+img[alt="orga"] {
+    border-radius: 20px;
+}
+
+/* --------------------------------------- End Organisation ---------------------------------------------- */
 
 header{
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
-    font-family: 'Open Sans', sans-serif;
 }
 .menu{
     display: flex;
