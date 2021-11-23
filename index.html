@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,35 +12,82 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>W2G</title>
 </head>
+
 <body>
 
     <header>
         <div class="LogoTitre">
-            <img src="./img/LogoW2G_2.png" alt="">
+            <img src="./img/LogoW2G_2.png" alt="LogoW2G">
         </div>
         <div class="menu">
-            <div class="boutonMenu">
+            <button class="boutonMenu">
                 <div>Accueil</div>
-            </div>
-            <div class="boutonMenu">
+            </button>
+            <button class="boutonMenu">
                 <div>Formation</div>
-            </div>
-            <div class="boutonMenu">
+            </button>
+            <button class="boutonMenu">
                 <div>Infrastructure</div>
-            </div>
+            </button>
+            <button class="boutonMenu">
+                <div>Technologies</div>
+            </button>
         </div>
     </header>
 
     <div id="index_introduction">
-
+        <div id="TitreW2G">Work 2 Gether</div>
+        <hr>
+        <div id="keyword">Adaptabilité • accessibilité • Fluidité<br>Pluridisciplinaire • Estime de soi
+        </div>
+        <div id="accroche">
+            <div>Etes-vous à la recherche d’une formation innovante et originale ? </div>
+            <div>Avez-vous envi d’une formation qui vous ressemble ?</div>
+            <div>Chez Work2Gether nous avons la solution.</div>
+        </div>
     </div>
 
     <div class="index_articles">
-        
+
         <article id="evaluation">
 
+            <div class="neumorAvatar">
+                <img src="https://zupimages.net/up/21/36/fzjh.jpeg" class="neumorphisme_img" alt="image d'avatar" />
+            </div>
+
+            <div class="column">
+                <h2 id="eval_titre">Un système d'évaluation novatrice</h2>
+                <p id="text_eval">Chez W2G, nous pensons que vos <span>compétences</span> importent davantage que vos notes ! </br>A la place, nous vous proposons un système
+                    d’évaluation entièrement basé sur vos efforts !
+                    En effet, chaque module possède une série de <span>cinq</span> grades correspondant à un niveau de compétence.
+                </p>
+
+                <div class="flex">
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                </div>
+
+                <!-- <p id="text_eval">
+                    Afin d’obtenir vos grades, vous serez amené à travailler dans des projets pluridisciplinaires. Pour
+                    tous les niveaux, des projets différents sont disponibles. Plus le niveau est élevé et plus la
+                    réalisation d’un projet sera longue. Une fois le projet réalisé, il sera donné aux professeurs des
+                    modules concernés. Ceux-ci sont chargés de rédiger un feedback et de valider l’obtention de grades,
+                    si le travail fourni valide les compétences !
+                </p>
+
+                <p id="text_eval">
+                    Valider un diplôme n’a jamais été aussi simple ! Il faut au minimum 3 grades de moyenne dans les
+                    modules de votre filière. Une des particularités de W2G étant que l'obtention du diplôme ne possède
+                    pas de durée. La durée d’étude des cursus est estimée à deux années. Vous pouvez cependant obtenir
+                    votre diplôme plus tôt ou plus tard, selon votre rythme de progression !
+                </p> -->
+            </div>
+
         </article>
-        
+
         <article id="project">
             <h2>Apprentissage à la carte</h2>
             <section id="first-block">   
@@ -60,21 +108,22 @@
 
         <article id="well-being">
             <p>Votre bien-être est notre principale préoccupation. Pour celà nous mettons en place différents outils pour vous rendre la vie dans notre campus plus agréable:</p>
-            <div class="choix-cours">
+            <div id="choix-cours">
                 <p>Vous choisissez ce que vous voulez apprendre à part 5 modules faisant partie d’un tronc 
                     commun pour asseoir quelques bases vous être libre de choisir les modules dans lesquelles vous voulez monter en compétence.
                 </p>
                 <img src="./img/choix.png" >
             </div>
-            <div id = "Sondage">
-                <img src="./img/sondage.png" >
+            <div id = "sondage">
+                
                 <p>Chaque trimestre, sera organisé un sondage pour évaluer votre niveau de morale. 
                     Vous serez amenés à nous donner vos ressentis et les axes d’amélioration 
                     de l’école W2G pour votre confort et votre bien être au sein du campus.</p>
-            </div>
+                    <img src="./img/sondage.png" >
+                </div>
             <div id=activite>
                 <p>Sans oublier bien sûr, mais évidemment  les activités extra scolaires:</p>
-                <div id =fete>
+                <div id ="fete">
                     <p>A savoir qu'il y aura trois 3 soirées , 2 galas au cours de l’années organisées par et sur le campus dans notre salle de bal, prévue à cet effet.</p>
                     <img src="./img/sifflet-de-fete.png" >
                 </div>
@@ -85,16 +134,17 @@
                     vous pourrez être en distanciel, présentiel ou même en hybride.</p>
                     <img src="">
                 </div>
-                <div id= sport>
+                <div id= "sport">
                     <p>Nous proposons aussi diverses activités sportives ainsi qu’un accès illimité à notre grande salle de musculation .
                     </p>
                     <img src="./img/sport.png" alt="">
                 </div>
-                <div id=culture>
+                <div id="culture">
                     <img src="" alt="">
                     <p>Ainsi que des activités culturelles telles que des concerts et des semaines culturelles où vous pourrez, si vous le souhaitez, exprimer votre âme d’artiste.
                     </p>
                 </div>
+                <br>
                 <div id=repos>
                     <img src="./img/sieste.png" alt="">
                     <p>Nous disposons également de nombreuses salles de repos un peu partout dans le campus, car nous avons conscience qu’un cerveau bien reposé est plus productif.
@@ -113,6 +163,7 @@
     <footer>
 
     </footer>
-    
+
 </body>
+
 </html>
