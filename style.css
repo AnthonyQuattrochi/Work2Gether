@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    background-color: #f0f0f0;
+    background-color: #f7e9dd;
     font-family: 'Open Sans', sans-serif;
     color: rgb(51, 51, 51);
 }
@@ -86,9 +86,8 @@ hr {
     font-size: 1.333rem;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
     border-radius: 50px;
-    background: #f0f0f0;
-    box-shadow:  6px 6px 12px #d9d9d9,
-                -6px -6px 12px #ffffff;
+    background: #f7e9dd;
+    box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px #ffffff;
 }
 
 .boutonMenu:not(#active):hover {
@@ -112,9 +111,8 @@ hr {
     margin: 0px auto;
     border-radius: 20px;
     margin-top: 5%;
-    padding: 2%; 
-    box-shadow:  27px 27px 34px #dddddd,
-             -27px -27px 34px #ffffff;
+    padding: 2%;
+    box-shadow: inset 5px 5px 18px #d9cdc2, inset -5px -5px 18px #fffff8;
 }
 
 .neumorAvatar {
@@ -124,8 +122,7 @@ hr {
     margin-top: 6%;
     border-radius: 123px;
     background: #e0e0e0;
-    box-shadow:  20px 20px 60px #cccccc,
-             -20px -20px 60px #ffffff;
+    box-shadow: inset 5px 5px 18px #d9cdc2, inset -5px -5px 18px #fffff8;
 }
 
 .neumorphisme_img {
@@ -133,12 +130,12 @@ hr {
     width: 150px;
     border-radius: 100%;
     margin: 25px;
-    box-shadow:  20px 20px 60px #cccccc,
-             -20px -20px 60px #ffffff;
+    box-shadow: inset 5px 5px 18px #d9cdc2, inset -5px -5px 18px #fffff8;
 }
 
 #eval_titre {
     font-family: 'Rubik', sans-serif;
+    color: #fc0;
 }
 
 #text_eval {
@@ -156,22 +153,15 @@ hr {
 }
 
 .icon {
-    height: 50px; 
-    width: 50px; 
-    background-color: rgb(231, 199, 129);
+    height: 50px;
+    width: 50px;
+    background-color: red;
     border-radius: 10px;
-    margin:0px auto; 
-    text-align: center;
-    vertical-align: middle;
-    display: table;
-}
-
-.icon span {
-    vertical-align:middle;
-    display: table-cell;
+    margin: 0px auto;
 }
 
 #evaluation span {
+    color: #fc0;
     font-weight: bold;
 }
 
@@ -185,7 +175,7 @@ hr {
     padding-top: 200px;
     padding-bottom: 100px;
     box-shadow: 0px 0px 5px rgb(0 0 0 / 33%);
-    background-color: #f7ddb7;
+    background-color: #fceee3;
 }
 
 #index_introduction div {
@@ -287,65 +277,32 @@ p {
 
 
 /*---------------------------------------------Zen-----------------------*/
-<<<<<<< HEAD
 #well-being{
-=======
-
-#well-being {
-    display: flex;
->>>>>>> 1ec50c14610cb32048e63f220d7208f44c612a62
     font-family: 'Outfit', sans-serif;
     width: 80%;
     margin: 0px auto;
     border-radius: 20px;
     margin-top: 5%;
-<<<<<<< HEAD
     padding: 2%; 
     box-shadow: inset 2px 5px 18px #e0e0e0,
             inset -5px -5px 18px #fbfbfb;
     animation: appear 1s ease-out both;
-=======
-    padding: 2%;
-    box-shadow: inset 2px 5px 18px #e0e0e0, inset -5px -5px 18px #fbfbfb;
->>>>>>> 1ec50c14610cb32048e63f220d7208f44c612a62
 }
 
 #activite {
     display: flex;
 }
 
-<<<<<<< HEAD
-
-=======
-@keyframes fade {
-    From {
-        Opacity: 1;
-    }
-    To {
-        Opacity: 0;
-    }
-}
->>>>>>> 1ec50c14610cb32048e63f220d7208f44c612a62
 
 #activite div {
     display: flex;
     width: 300px;
     height: 200px;
     justify-content: space-between;
-<<<<<<< HEAD
 
 }
 
 img{
-=======
-}
-
-#well-being p {
-    block-size: 200px;
-}
-
-img {
->>>>>>> 1ec50c14610cb32048e63f220d7208f44c612a62
     height: 100px;
     width: 100px;
 }
