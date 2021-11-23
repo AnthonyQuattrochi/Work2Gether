@@ -1,13 +1,61 @@
+
 body{
     margin: 0;
-    padding: 15px;
+    padding: 0;
     font-size: 16px;
+    background-color: #f7e9dd;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(51, 51, 51);
 }
+
+/* --------------------------------------- Organisation ---------------------------------------------- */
+
+#title_orga {
+    margin-bottom: 50px;
+    margin-left: 5%;
+}
+
+.orga {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+img[src="img/scrum.png"]{
+    margin-right: 50px;
+    width: 800px;
+    height: 314px;
+}
+
+img[src="img/Orga.PNG"]{
+    margin-left: 50px;
+    width: 742.4px;
+    height: 354.4px;
+}
+
+.p_orga {
+    width: 45%;
+}
+
+img[alt="orga"] {
+    border-radius: 20px;
+}
+
+/* --------------------------------------- End Organisation ---------------------------------------------- */
+
 header{
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
-    font-family: 'Open Sans', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+hr{
+    border-style: solid;
+    border-color: black;
+    width: 200px;
+    border-width: 0.5px;
+    box-shadow: 0px 2px 3px rgb(0 0 0 / 50%);
+    margin: 30px auto 30px auto;
 }
 .menu{
     display: flex;
@@ -23,12 +71,13 @@ header{
     transition: 1s;
     display: flex;
     justify-content: center;
+    border: none;
     margin: 20px;
     height: 40px;
-    font-size: 1.5rem;
-    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    font-size: 1.333rem;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
     border-radius: 50px;
-    background: #ffffff;
+    background: #f7e9dd;
     box-shadow:  6px 6px 12px #d9d9d9,
                 -6px -6px 12px #ffffff;
 }
@@ -108,3 +157,89 @@ header{
     font-weight: bold;
 } 
 
+#index_introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 33%);
+    background-color: #fceee3;
+}
+#index_introduction div{
+    align-self: center;
+}
+
+#TitreW2G{
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
+    font-size: 4.209em;
+}
+#keyword {
+    text-align: center;
+    font-size: 1.333rem;
+}
+#accroche{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    font-size: 1.333rem;
+}
+
+/* --------------------------------------- Taille du texte ---------------------------------------*/
+
+h1{
+    size: 4.209rem;
+}
+
+h2{
+    size: 3.157rem;
+}
+
+h3{
+    size: 2.369rem;
+}
+
+h4{
+    size: 1.777rem;
+}
+
+p{
+    size: 1rem;
+}
+
+/* --------------------------------------- Article Projet ---------------------------------------*/
+#first-block{
+    display: flex;
+}
+
+#first-block img{
+
+   
+    margin: 1rem;
+    border-radius: 153px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  20px 20px 39px #9d9d9d,
+                -20px -20px 39px #ffffff;
+}
+
+#first-block div{
+    border-radius: 153px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  14px 14px 28px #9d9d9d,
+                 -14px -14px 28px #ffffff;
+}
+
+
+
+/*---------------------------------------------Zen-----------------------*/
+
+#sondage , #fete, #sport, #culture ,#choix-cours {
+    block-size: 300px;
+    align-items:center;
+    justify-content: space-between;
+}
+
+#well-being img{
+    width: 200px;
+}
