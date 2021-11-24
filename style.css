@@ -6,7 +6,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: rgb(51, 51, 51);
 }
-
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 8px;
+    }
+  }
 header a {
     text-decoration: none;
 }
@@ -83,12 +87,8 @@ header {
     background-color: #F0F0F0;
     width: 100%;
     z-index: 1000;
+    top: 0;
     box-shadow: 0px 2px 3px rgb(0 0 0 / 50%);
-}
-
-object{
-    width: 100%;
-    height: 80px;
 }
 
 .navbar{
@@ -101,7 +101,7 @@ object{
 
 hr {
     border-style: solid;
-    border-color: black;
+    border-color: white;
     width: 200px;
     border-width: 0.5px;
     box-shadow: 0px 2px 3px rgb(0 0 0 / 50%);
@@ -131,7 +131,7 @@ hr {
     border: none;
     margin: 20px;
     height: 40px;
-    font-size: 1.333rem;
+    font-size: 21px;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
     border-radius: 50px;
     background: #F0F0F0;
@@ -205,7 +205,7 @@ hr {
     background-color: #ffcc00;
     border-radius: 10px;
     margin: 0px auto;
-    font-size: 1.333rem;
+    font-size: 1.333em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,17 +223,23 @@ hr {
     flex-direction: column;
     justify-content: center;
     padding-top: 200px;
-    padding-bottom: 150px;
-    box-shadow: 0px 0px 8px rgb(0 0 0 / 33%);
+    padding-bottom: 200px;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 33%);
+    background-image: url("./img/imageCampus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
     background-color: #fafafa;
+    overflow: hidden;
+    color: white;
+    position: relative;
 }
-
 #index_introduction div {
     align-self: center;
 }
 
 #TitreW2G {
-    text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
+    text-shadow: 2px 2px 4px rgb(255 255 255 / 25%);
     font-size: 4.209em;
 }
 
@@ -260,39 +266,41 @@ hr {
 
 #keyword {
     text-align: center;
-    font-size: 1.333rem;
+    font-size: 1.333em;
 }
 
-#accroche {
+#index_accroche {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     padding-top: 100px;
-    font-size: 1.333rem;
 }
 
 
 /* --------------------------------------- Taille du texte ---------------------------------------*/
 
 h1 {
-    size: 4.209rem;
+    font-size: 4.209em;
 }
 
 h2 {
-    size: 3.157rem;
+    font-size: 2.369em;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
 }
 
 h3 {
-    size: 2.369rem;
+    font-size: 1.777em;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
 }
 
 h4 {
-    size: 1.777rem;
+    
+    font-size: 1.333em;
 }
 
 p {
-    size: 1rem;
+    font-size: 1.333em;
 }
 
 
@@ -446,26 +454,53 @@ footer {
 }
 
 /*----------------------------------SCROLLBAR ---------------------------------- */
-
-.visible-scrollbar, .invisible-scrollbar, .mostly-customized-scrollbar {
-    display: block;
-    width: 10em;
-    overflow: auto;
-    height: 2em;
-  }
-  .invisible-scrollbar::-webkit-scrollbar {
-    display: none;
+  
+  body::-webkit-scrollbar {
+      width: 15px;
+      height: 15px;
   }
   
-  /* Demonstrate a "mostly customized" scrollbar
-   * (won't be visible otherwise if width/height is specified) */
-  .mostly-customized-scrollbar::-webkit-scrollbar {
-    width: 5px;
-    height: 8px;
-    background-color: #aaa; /* or add it to the track */
+  body::-webkit-scrollbar-track-piece  {
+      background-color: #C2D2E4;
   }
-  /* Add a thumb */
-  .mostly-customized-scrollbar::-webkit-scrollbar-thumb {
-      background: #000;
+  
+  body::-webkit-scrollbar-thumb:vertical {
+      height: 30px;
+      background-color: #0A4C95;
+  }
+
+
+  /*------------------------------------FORMATION------------------------------------------ */
+  
+  #formation {
+      width: 90%;  
+      height: 600px; 
+      margin:0px auto; 
+      margin-top: 5%; 
+      display: flex;
+  }
+
+  .bloc_1 {
+      width: 50%;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      background-image: url("https://images.unsplash.com/photo-1542596594-649edbc13630?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGZ1bnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60");
+      background-size: cover;
+  }
+
+  .bloc_2 {
+      background-color: #ffcc00;
+      width: 80%;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      padding: 4%;
+  }
+
+  #formation h2 {
+      text-decoration: none;
+  }
+
+  #formation p {
+      text-align: justify;
   }
   
