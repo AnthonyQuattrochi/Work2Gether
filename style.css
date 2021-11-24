@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
@@ -14,10 +17,14 @@ body {
         flex-direction: column;
     }
   }
-header a {
+a {
     text-decoration: none;
 }
-
+.material-icons {
+    padding-top: 20px;
+    color: white;
+    font-size: 48px;
+}
 
 /* --------------------------------------- Organisation ---------------------------------------------- */
 
@@ -134,7 +141,7 @@ hr {
     border: none;
     margin: 20px;
     height: 40px;
-    font-size: 21px;
+    font-size:16px;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
     border-radius: 50px;
     background: #F0F0F0;
@@ -225,8 +232,8 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 220px;
-    padding-bottom: 220px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     box-shadow: 0px 2px 4px rgb(0 0 0 / 33%);
     background-image: url("./img/imageCampus.jpg");
     background-repeat: no-repeat;
@@ -432,7 +439,7 @@ p {
     width: 100px;
     border-radius: 100%;
     margin: 25px;
-    box-shadow: 9px 9px 18px #a8a8a8, -9px -9px 18px #ffffff;
+    box-shadow: 6px 6px 12px #a8a8a8, -6px -6px 12px #ffffff;
 }
 
 #pAct {
@@ -558,3 +565,43 @@ footer {
       text-align: justify;
   }
   
+@media (prefers-color-scheme: dark){
+    body{
+        color: gainsboro;
+        background-color: #363636;
+        text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
+    }
+    header {
+    background-color: #363636;
+    }
+    .boutonMenu{
+        color:gainsboro;
+        background: #363636;
+box-shadow:  6px 6px 13px #161616,
+             -6px -6px 13px #565656;
+    }
+    .boutonMenu:not(#active):hover{
+        background: #363636;
+box-shadow: inset 6px 6px 13px #161616,
+            inset -6px -6px 13px #565656;
+    }
+    #evaluation{  
+        box-shadow: inset 6px 6px 12px #161616,inset -6px -6px 12px #565656;
+    }
+    #project{  
+        box-shadow: inset 6px 6px 12px #161616,inset -6px -6px 12px #565656;
+    }
+    #well-being{  
+        box-shadow: inset 6px 6px 12px #161616,inset -6px -6px 12px #565656;
+    }
+    #first-block img {
+        box-shadow: none;
+    }
+    
+    #first-block div {
+        box-shadow: inset 5px 5px 10px #cacaca, inset -5px -5px 10px #f6f6f6;
+    }
+    #activite img {
+        box-shadow: 6px 6px 12px #161616, -6px -6px 12px #565656;
+    }
+}
