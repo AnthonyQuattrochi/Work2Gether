@@ -834,8 +834,10 @@ body::-webkit-scrollbar-thumb:vertical {
 
 #formation div.bloc_1 {
     position: relative;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
     overflow: hidden;
 }
 
@@ -844,23 +846,16 @@ body::-webkit-scrollbar-thumb:vertical {
     height: 100%;
 }
 
-.citation {
-    color: white;
-    width: 50%;
-    height: auto;
-    margin: 0px auto;
-    opacity: 0;
+#formation div.bloc_1:hover .hidden-text {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.6);
 }
 
-.citation {
-    color: white;
-    width: 50%;
-    height: auto;
-    margin: 0px auto;
-    opacity: 0;
-}
+#formation .item-text {
+    padding: 10%; 
+} 
 
-.bloc_2 {
+#formation .bloc_2 {
     background-color: #ffcc00;
     width: 80%;
     border-top-right-radius: 8px;
