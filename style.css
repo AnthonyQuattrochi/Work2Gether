@@ -280,6 +280,7 @@ p {
 
 #first-block {
     display: flex;
+    justify-content: space-between;
 }
 
 #first-block img {
