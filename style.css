@@ -76,6 +76,19 @@ img[src="img/Orga.PNG"] {
 /* --------------------------------------- End Organisation ---------------------------------------------- */
 
 header {
+    position: fixed;
+    background-color: #F0F0F0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 2px 3px rgb(0 0 0 / 50%);
+}
+
+object{
+    width: 100%;
+    height: 80px;
+}
+
+.navbar{
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
@@ -107,7 +120,8 @@ hr {
 
 
 /* ----------------------- NAVIGATION ---------------------------*/
-.boutonMenu{
+
+.boutonMenu {
     transition: 0.2s;
     display: flex;
     justify-content: center;
@@ -118,12 +132,11 @@ hr {
     text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
     border-radius: 50px;
     background: #F0F0F0;
-    box-shadow:  6px 6px 12px #cccccc,
-             -6px -6px 12px #ffffff;
+    box-shadow: 6px 6px 12px #cccccc, -6px -6px 12px #ffffff;
 }
-.boutonMenu:not(#active):hover{
-    box-shadow: inset 6px 6px 12px #cccccc,
-            inset -6px -6px 12px #ffffff;
+
+.boutonMenu:not(#active):hover {
+    box-shadow: inset 6px 6px 12px #cccccc, inset -6px -6px 12px #ffffff;
 }
 
 .boutonMenu div {
@@ -143,9 +156,8 @@ hr {
     margin: 0px auto;
     border-radius: 20px;
     margin-top: 5%;
-    padding: 2%; 
-    box-shadow: inset 6px 6px 12px #cccccc,
-            inset -6px -6px 12px #ffffff;
+    padding: 2%;
+    box-shadow: inset 6px 6px 12px #cccccc, inset -6px -6px 12px #ffffff;
 }
 
 #evaluation .neumorAvatar {
@@ -155,8 +167,7 @@ hr {
     margin-top: 6%;
     border-radius: 123px;
     background: #F0F0F0;
-    box-shadow: inset 6px 6px 12px #cccccc,
-            inset -6px -6px 12px #ffffff;
+    box-shadow: inset 6px 6px 12px #cccccc, inset -6px -6px 12px #ffffff;
 }
 
 #evaluation .neumorphisme_img {
@@ -164,8 +175,7 @@ hr {
     width: 150px;
     border-radius: 100%;
     margin: 25px;
-    box-shadow: inset 6px 6px 12px #cccccc,
-            inset -6px -6px 12px #ffffff;
+    box-shadow: inset 6px 6px 12px #cccccc, inset -6px -6px 12px #ffffff;
 }
 
 #evaluation #eval_titre {
@@ -192,12 +202,11 @@ hr {
     background-color: #ffcc00;
     border-radius: 10px;
     margin: 0px auto;
-    font-size: 1.333rem; 
-    display: flex; 
-    justify-content: center; 
+    font-size: 1.333rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-
 
 #evaluation span {
     font-weight: bold;
@@ -271,13 +280,13 @@ p {
     margin: 0px auto;
     border-radius: 20px;
     margin-top: 5%;
-    padding: 2%; 
-    box-shadow: inset 2px 5px 18px #e0e0e0,
-            inset -5px -5px 18px #fbfbfb;
+    padding: 2%;
+    box-shadow: inset 2px 5px 18px #e0e0e0, inset -5px -5px 18px #fbfbfb;
 }
 
 #first-block {
     display: flex;
+    justify-content: space-between;
 }
 
 #first-block img {
@@ -293,9 +302,9 @@ p {
     width: 200px;
     border-radius: 123px;
     background: #e0e0e0;
-    box-shadow: 25px 25px 50px #cacaca,
-        -25px -25px 50px #f6f6f6;
+    box-shadow: 25px 25px 50px #cacaca, -25px -25px 50px #f6f6f6;
 }
+
 
 /*-----------------------------------------------------------------Zen------------------------------------------------------------------*/
 
@@ -319,44 +328,45 @@ p {
     width: 300px;
     height: 200px;
     justify-content: space-between;
-    box-shadow: 0 0 0  0 rgb(253, 216, 4);
-    
+    box-shadow: 0 0 0 0 rgb(253, 216, 4);
 }
 
-#activite div :hover{
-    animation: pulse 1.4s forwards;
+#activite div :hover {
+    animation: pulse 1.2s forwards;
+    cursor: pointer;
 }
 
 @keyframes pulse {
-    to{
+    to {
         box-shadow: 0 0 0 18px rgba(206, 241, 7, 0.137);
     }
-    
 }
 
 #activite img {
-        height: 100px;
-        width: 100px;
-        border-radius: 100%;
-        margin: 25px;
-        box-shadow: 9px 9px 18px #a8a8a8, -9px -9px 18px #ffffff;
-    }
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    margin: 25px;
+    box-shadow: 9px 9px 18px #a8a8a8, -9px -9px 18px #ffffff;
+}
 
 #pAct {
     margin-top: 50px;
     text-align: center;
     animation: apparition .8s ease-out;
 }
+
 @keyframes apparition {
-    from{
+    from {
         opacity: 0;
         transform: translateX(-100px);
     }
-    to{
+    to {
         opacity: 1;
         transform: translateY(0px);
     }
 }
+
 
 /* --------------------------------------- Technologies ---------------------------------------------- */
 
@@ -366,7 +376,7 @@ p {
 
 #blockflex {
     display: flex;
-    
+    justify-content: space-around;
     text-align: center;
 }
 
@@ -379,6 +389,11 @@ p {
     padding: 25px;
     margin-top: 50px;
     font-size: small;
+}
+
+#blockflex div :last-child {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #Technologie main> :nth-child(2) {
@@ -396,3 +411,37 @@ p {
 #active {
     background: #fafafa;
 }
+
+/* ----------------------------------- FOOTER -------------------------------------------*/ 
+
+footer {
+    height: 200px; 
+    background-color: rgb(196, 196, 196);
+    margin-top: 5%; 
+    box-shadow: inset 7px 7px 14px #bdbdbd;
+}
+
+/*----------------------------------SCROLLBAR ---------------------------------- */
+
+.visible-scrollbar, .invisible-scrollbar, .mostly-customized-scrollbar {
+    display: block;
+    width: 10em;
+    overflow: auto;
+    height: 2em;
+  }
+  .invisible-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Demonstrate a "mostly customized" scrollbar
+   * (won't be visible otherwise if width/height is specified) */
+  .mostly-customized-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaa; /* or add it to the track */
+  }
+  /* Add a thumb */
+  .mostly-customized-scrollbar::-webkit-scrollbar-thumb {
+      background: #000;
+  }
+  
