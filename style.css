@@ -275,7 +275,7 @@ hr {
 }
 
 #evaluation .pop:hover {
-    color: #333333; 
+    letter-spacing: 0.2rem;
     transition-duration: 0.5s;
 }
 
@@ -672,14 +672,6 @@ footer {
       margin: 0px auto;
       opacity: 0;
   }
-  
-/* 
-  .bloc_1 img:hover .citation {
-    opacity: 1;
-  }
-  .bloc_1 img:hover  {
-    filter: brightness(50%); 
-  } */
 
 
   .bloc_2 {
