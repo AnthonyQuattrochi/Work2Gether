@@ -529,7 +529,36 @@ footer {
       display: flex;
   }
 
-  .bloc_1 {
+  #apprentissage{
+    width: 80%;  
+    height: auto; 
+    margin:0px auto; 
+    margin-top: 10%; 
+    display: flex;
+  }
+
+  #apprentissage div.bloc_1{
+    width: 50%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px; 
+    overflow: hidden;
+  }
+
+  #apprentissage div.bloc_1 img{
+    object-fit: fill;
+    height: 100%;
+  }
+
+  #apprentissage div.bloc_2 {
+    background-color: #ffcc00;
+    width: 80%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 4%;
+    text-align: justify;
+}
+
+  #formation div.bloc_1 {
       width: 50%;
       border-top-left-radius: 8px;
       border-bottom-left-radius: 8px;
@@ -537,7 +566,7 @@ footer {
       background-size: cover;
   }
 
-  .bloc_2 {
+ #formation div.bloc_2 {
       background-color: #ffcc00;
       width: 80%;
       border-top-right-radius: 8px;
