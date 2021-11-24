@@ -87,7 +87,7 @@ header {
 
 hr {
     border-style: solid;
-    border-color: black;
+    border-color: white;
     width: 200px;
     border-width: 0.5px;
     box-shadow: 0px 2px 3px rgb(0 0 0 / 50%);
@@ -213,17 +213,22 @@ hr {
     flex-direction: column;
     justify-content: center;
     padding-top: 200px;
-    padding-bottom: 150px;
-    box-shadow: 0px 0px 8px rgb(0 0 0 / 33%);
+    padding-bottom: 200px;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 33%);
+    background-image: url("./img/imageCampus.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
     background-color: #fafafa;
+    overflow: hidden;
+    color: white;
 }
-
 #index_introduction div {
     align-self: center;
 }
 
 #TitreW2G {
-    text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
+    text-shadow: 2px 2px 4px rgb(255 255 255 / 25%);
     font-size: 4.209em;
 }
 
@@ -232,10 +237,11 @@ hr {
     font-size: 1.333rem;
 }
 
-#accroche {
+#index_accroche {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     padding-top: 100px;
     font-size: 1.333rem;
 }
