@@ -6,16 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="javascript.js"></script>
+    <script type="text"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="reveal.js" defer></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>W2G</title>
 </head>
 
 <body>
-
     <header>
         <script src="navbar.js"></script>
     </header>
@@ -25,8 +27,17 @@
         <hr>
         <div id="keyword">Adaptabilité • Accessibilité • Fluidité<br>Pluridisciplinaire • Estime de soi
         </div>
+        <div>
+            <a href="#anchor_articles">
+                <span class="material-icons">
+                    arrow_downward
+                </span>
+            </a>
+        </div>
     </div>
 
+    <div id="anchor_articles" style="padding-top: 60px;"></div>
+    
     <div id="index_accroche">
         <div>
             <h3>Avez-vous envi d’une formation innovante qui vous ressemble ?<br>Au campus Work2Gether nous avons la
@@ -34,7 +45,7 @@
         </div>
     </div>
 
-    <div class="index_articles">
+    <div class="index_articles" id="index_articles">
 
         <article id="evaluation" class="reveal">
 
@@ -72,14 +83,14 @@
 
         </article>
 
-        <article id="project" class="reveal">
+        <article id="project" class="reveal" >
             <h2>Apprentissage à la carte</h2>
             <section id="first-block">
                 <p id="project-content">
-                    Chez W2G nous vous proposons un apprentissage atypique qui ciblera au mieux vos besoins et
+                    Chez W2G nous vous proposons un <b>apprentissage atypique</b> qui ciblera au mieux vos besoins et
                     envies.<br>
-                    <br>Envie de vous formez autrement et de selectionner vous même vos cours ?<br>
-                    <br>Envie de travailler sur des projets intéressant ,innovants, et professionnel ?<br>
+                    <br>Envie de vous formez autrement et de <b>selectionner vous même</b> vos cours ?<br>
+                    <br>Envie de travailler sur des <b>projets innovants</b>, intéressant, et professionnel ?<br>
                     <br>On vous en dit plus de <b>l'autre côté de la porte.</b>
                 </p>
                 <div>
@@ -88,7 +99,7 @@
             </section>
             <div class='wrapper'>
                 <div class="full_door">
-                    <a href='formation.html'>
+                    <a href='formation.html #apprentissage'>
                         <div class="frame">
                             <div class="door">
                                 <div class="lock"></div>
@@ -99,37 +110,37 @@
             </div>
         </article>
 
-        <article id="well-being" class="reveal">
+        <article id="well-being" class="reveal" class="activ">
             <h2>Une vie zen</h2>
             <div id="intro">
                 <p>Votre bien-être est notre principale préoccupation. Pour celà nous mettons en place différents outils
                     pour vous rendre la vie dans notre campus plus agréable:</p>
             </div>
-            <div id="activite">
+            <div id="activite" >
                 <div id="choix">
-                    <img src="./img/choix.png" alt="choix" type="button" onclick="displayPchoix()">
+                    <img src="./img/choix.png" alt="choix" type="button" class="activ" onclick="displayPchoix()">
                 </div>
                 <div id="sondage">
-                    <img src="./img/sondage.png" alt="sondage" type="button" onclick="displayPsondage()">
+                    <img src="./img/sondage.png" alt="sondage" class="activ" type="button" onclick="displayPsondage()">
                 </div>
                 <div id="cours">
-                    <img src="./img/bourse-detudes.png" alt="modcours" type="button" onclick="displayPcours()">
+                    <img src="./img/bourse-detudes.png" alt="modcours" class="activ" type="button" onclick="displayPcours()">
                 </div>
                 <div id="sport">
-                    <img src="./img/sport.png" alt="sport" type="button" onclick="displayPsport()">
+                    <img src="./img/sport.png" alt="sport" type="button" class="activ" onclick="displayPsport()">
                 </div>
 
 
                 <div id="fete">
-                    <img src="./img/sifflet-de-fete.png" alt="fete" type="button" onclick="displayPfete()">
+                    <img src="./img/sifflet-de-fete.png" alt="fete" class="activ" type="button" onclick="displayPfete()">
                 </div>
 
                 <div id="culture">
-                    <img src="./img/arts.png" alt="culture" alt="culture" type="button" onclick="displayPculture()">
+                    <img src="./img/arts.png" alt="culture" alt="culture" class="activ" type="button" onclick="displayPculture()">
                 </div>
 
                 <div id=repos>
-                    <img src="./img/sieste.png" alt="repos" type="button" onclick="displayPrepos()">
+                    <img src="./img/sieste.png" alt="repos" type="button" class="activ" onclick="displayPrepos()">
                 </div>
 
             </div>
@@ -144,6 +155,8 @@
         <article id="futur">
 
         </article>
+
+       
 
     </div>
 

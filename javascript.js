@@ -1,8 +1,4 @@
-function vider() {
-    const showMessage = document.getElementById('pAct');
-    showMessage.innerHTML = "";
-    showMessage.style.display = 'block';
-}
+
 
 function displayPsondage() {
     const showMessage = document.getElementById('pAct');
@@ -44,7 +40,15 @@ function displayPrepos() {
     const showMessage = document.getElementById('pAct');
     showMessage.innerHTML = 'Nous disposons également de nombreuses salles de repos un peu partout dans le campus, car nous avons conscience qu’un cerveau bien reposé est plus productif.';
     showMessage.style.display = 'block';
-}
+ }
+ 
+ function modeDark() {
+   document.body.classList.toggle("dark");
+   var e=document.getElementsByClassName("boutonMenu");
+   
+
+   }
+
 
 function showStory() {
     var x = document.getElementById("StoryHide");
