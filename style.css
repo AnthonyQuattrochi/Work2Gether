@@ -14,19 +14,15 @@ header a {
 
 /* --------------------------------------- Organisation ---------------------------------------------- */
 
-#title_orga {
+#title_orga, .title_orga {
     margin-bottom: 50px;
     margin-left: 5%;
-}
-
-.arrow-dropping {
-    width: 2%;
-    height: 2%;
-    float: right;
+    margin-top: 50px;
 }
 
 .orga {
     display: flex;
+    flex-direction: row;
     margin-bottom: 100px;
     font-family: 'Outfit', sans-serif;
     margin: 0px auto;
@@ -44,14 +40,16 @@ header a {
 
 img[src="img/scrum.png"] {
     margin-right: 50px;
-    width: 800px;
-    height: 314px;
+    width: 500px;
+    height: 196.25px;
 }
 
 img[src="img/Orga.PNG"] {
     margin-left: 50px;
     width: 742.4px;
     height: 354.4px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .p_orga {
