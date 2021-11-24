@@ -591,7 +591,6 @@ p {
     margin-top: 5%;
     padding: 2%;
     box-shadow: inset 6px 6px 12px #cccccc, inset -6px -6px 12px #ffffff;
-    animation: appear 1s ease-out both;
 }
 
 #activite {
@@ -606,13 +605,13 @@ p {
 }
 
 #activite div :hover {
-    animation: pulse 1.2s forwards;
+    animation: pulse 0.8s forwards;
     cursor: pointer;
 }
 
 @keyframes pulse {
     to {
-        box-shadow: 0 0 0 18px rgba(206, 241, 7, 0.137);
+        box-shadow: 0 0 0 10px rgba(173, 173, 173, 0.137);
     }
 }
 
