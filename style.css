@@ -6,11 +6,13 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: rgb(51, 51, 51);
 }
+
 @media only screen and (max-width: 600px) {
     body {
         font-size: 8px;
     }
-  }
+}
+
 header a {
     text-decoration: none;
 }
@@ -18,8 +20,28 @@ header a {
 
 /* --------------------------------------- Organisation ---------------------------------------------- */
 
+@media only screen and (max-width: 600px) {
+    .img_orga {
+        display: none;
+    }
+    img[src="img/Orga.PNG"] {
+        margin-left: 50px;
+        width: 74.24px;
+        height: 35.44px;
+    }
+    .p_orga {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .orga {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
 
-#title_orga, .title_orga {
+#title_orga,
+.title_orga {
     margin-bottom: 50px;
     margin-left: 5%;
     margin-top: 50px;
@@ -27,7 +49,6 @@ header a {
 
 .orga {
     display: flex;
-    flex-direction: row;
     margin-bottom: 100px;
     font-family: 'Outfit', sans-serif;
     margin: 0px auto;
@@ -91,7 +112,7 @@ header {
     box-shadow: 0px 2px 3px rgb(0 0 0 / 50%);
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
@@ -250,6 +271,7 @@ hr {
     color: white;
     position: relative;
 }
+
 #index_introduction div {
     align-self: center;
 }
@@ -259,26 +281,29 @@ hr {
     font-size: 4.209em;
 }
 
-#TitreW2G::before {  
+#TitreW2G::before {
     transform: scaleX(0);
     transform-origin: bottom right;
-  }
-  
-  #TitreW2G:hover::before {
+}
+
+#TitreW2G:hover::before {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
-  
-  #TitreW2G::before {
+}
+
+#TitreW2G::before {
     content: " ";
     display: block;
     position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     inset: 0 0 0 0;
     background: hsl(200 100% 80%);
     z-index: -1;
     transition: transform .3s ease;
-  }
+}
 
 #keyword {
     text-align: center;
@@ -311,7 +336,6 @@ h3 {
 }
 
 h4 {
-    
     font-size: 1.333em;
 }
 
@@ -353,12 +377,12 @@ p {
     box-shadow: 25px 25px 50px #cacaca, -25px -25px 50px #f6f6f6;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     justify-content: center;
-    
 }
-.full_door{
+
+.full_door {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,27 +390,26 @@ p {
     height: 164px;
     border-radius: 30px;
     background: linear-gradient(225deg, #f0f0f0, #cacaca);
-    box-shadow:  -8px 8px 17px #898989,
-                 8px -8px 17px #ffffff;
+    box-shadow: -8px 8px 17px #898989, 8px -8px 17px #ffffff;
 }
 
-  .frame{
+.frame {
     height: 120px;
     width: 70px;
     border-start-start-radius: 55px;
     border-start-end-radius: 55px;
     border: 4px solid #000;
     border-bottom: none;
-  }
+}
 
-  .lock{
+.lock {
     width: 10px;
     height: 10px;
-    background: rgb(0,0,0);
+    background: rgb(0, 0, 0);
     border-radius: 20px;
-  }
+}
 
-  .door{
+.door {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -397,11 +420,12 @@ p {
     background: linear-gradient(145deg, #898989, #c0c0c0);
     transform-origin: left;
     transition: transform .45s;
-    
-  }
-  .door:hover{
+}
+
+.door:hover {
     transform: perspective(1200px) rotateY(40deg);
-  }
+}
+
 
 /*-----------------------------------------------------------------Zen------------------------------------------------------------------*/
 
@@ -509,14 +533,16 @@ p {
     background: #fafafa;
 }
 
-/* ----------------------------------- FOOTER -------------------------------------------*/ 
+
+/* ----------------------------------- FOOTER -------------------------------------------*/
 
 footer {
-    height: 200px; 
+    height: 200px;
     background-color: rgb(196, 196, 196);
-    margin-top: 5%; 
+    margin-top: 5%;
     box-shadow: inset 7px 7px 14px #bdbdbd;
 }
+
 
 /*----------------------------------SCROLLBAR ---------------------------------- */
   
@@ -575,3 +601,28 @@ footer {
       text-align: justify;
   }
   
+
+body::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+
+body::-webkit-scrollbar-track-piece {
+    background-color: #C2D2E4;
+}
+
+body::-webkit-scrollbar-thumb:vertical {
+    height: 30px;
+    background-color: #0A4C95;
+}
+
+/* --------------------------------------- Outils ---------------------------------------------- */
+
+#Outils {
+    margin-top: 100px;
+}
+
+#Outils main {
+    display: flex;
+    flex-direction: column;
+}
