@@ -250,6 +250,7 @@ h1 {
 
 h2 {
     size: 3.157rem;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
 }
 
 h3 {
