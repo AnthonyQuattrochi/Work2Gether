@@ -556,7 +556,6 @@ p {
     display: flex;
     width: 25%;
     border-radius: 50px;
-    background: #F0F0F0;
     box-shadow: inset 6px 6px 12px #cccccc, inset -6px -6px 12px #ffffff;
     padding: 25px;
     margin-top: 50px;
@@ -574,7 +573,6 @@ p {
     width: 95%;
     padding: 20px;
     border-radius: 50px;
-    background: #F0F0F0;
     box-shadow: inset 6px 6px 12px #cccccc, inset -6px -6px 12px #ffffff;
     padding: 25px;
     margin-top: 50px;
