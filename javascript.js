@@ -29,7 +29,7 @@ function displayPsondage() {
 
  function displayPfete() {
     const showMessage = document.getElementById('pAct');    
-    showMessage.innerHTML = 'il y aura trois 3 soirées , 2 galas au cours de l’années organisées par et sur le campus dans notre salle de bal, prévue à cet effet.'; 
+    showMessage.innerHTML = 'Il y aura trois 3 soirées , 2 galas au cours de l’années organisées par et sur le campus dans notre salle de bal, prévue à cet effet.'; 
     showMessage.style.display = 'block';
  }
 
