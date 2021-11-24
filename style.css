@@ -633,11 +633,33 @@ footer {
   }
 
   #apprentissage div.bloc_1{
-    width: 50%;
+    position: relative;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px; 
     overflow: hidden;
   }
+
+  .hidden-text {
+    opacity: 0;
+    color: #F0F0F0;
+    text-align: center;
+    position: absolute;
+    left: 50%;                        
+    top: 50%;                         
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s ease;
+}
+
+#apprentissage div.bloc_1:hover .hidden-text {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.6);
+}
+
 
   #apprentissage div.bloc_1 img{
     object-fit: fill;
@@ -649,6 +671,8 @@ footer {
     width: 80%;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
     padding: 4%;
     text-align: justify;
 }
