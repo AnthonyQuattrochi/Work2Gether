@@ -1,4 +1,4 @@
-const ratio = .30;
+const ratio = .32;
 const options = {
     root: null,
     rootMargin: '0px',
