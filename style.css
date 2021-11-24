@@ -929,66 +929,6 @@ body::-webkit-scrollbar-thumb:vertical {
     text-align: justify;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        color: gainsboro;
-        background-color: #363636;
-        text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
-    }
-    header {
-        background-color: #363636;
-    }
-    .boutonMenu {
-        color: gainsboro;
-        background: #363636;
-        box-shadow: 6px 6px 13px #161616, -6px -6px 13px #565656;
-    }
-    .boutonMenu:not(#active):hover {
-        background: #363636;
-        box-shadow: inset 6px 6px 13px #161616, inset -6px -6px 13px #565656;
-    }
-    #evaluation {
-        box-shadow: inset 6px 6px 12px #161616, inset -6px -6px 12px #565656;
-    }
-    #project {
-        box-shadow: inset 6px 6px 12px #161616, inset -6px -6px 12px #565656;
-    }
-    #well-being {
-        box-shadow: inset 6px 6px 12px #161616, inset -6px -6px 12px #565656;
-    }
-    #futur {
-        box-shadow: inset 6px 6px 12px #161616, inset -6px -6px 12px #565656;
-    }
-    #first-block img {
-        box-shadow: none;
-    }
-    #first-block div {
-        box-shadow: inset 5px 5px 10px #cacaca, inset -5px -5px 10px #f6f6f6;
-    }
-    #activite img {
-        box-shadow: 6px 6px 12px #161616, -6px -6px 12px #565656;
-    }
-    #formation {
-        color: rgb(51, 51, 51);
-        box-shadow: 10px 10px 20px #161616;
-    }
-    #apprentissage {
-        color: rgb(51, 51, 51);
-        box-shadow: 10px 10px 20px #161616;
-    }
-    .orga {
-        box-shadow: 6px 6px 12px #282828, -6px -6px 12px #444444;
-    }
-    #Technologie main> :nth-child(2) {
-        background: #363636;
-        box-shadow: inset 6px 6px 12px #161616, inset -6px -6px 12px #565656;
-    }
-    #blockflex div {
-        background: #363636;
-        box-shadow: inset 6px 6px 12px #161616, inset -6px -6px 12px #565656;
-    }
-}
-
 
 /* --------------------------------------- Outils ---------------------------------------------- */
 
