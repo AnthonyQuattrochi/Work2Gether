@@ -20,35 +20,28 @@ header a {
 
 /* --------------------------------------- Organisation ---------------------------------------------- */
 
-<<<<<<< HEAD
-#title_orga,
-.title_orga {
-=======
 @media only screen and (max-width: 600px) {
     .img_orga {
         display: none;
     }
-    
     img[src="img/Orga.PNG"] {
         margin-left: 50px;
         width: 74.24px;
         height: 35.44px;
     }
-
     .p_orga {
         margin-left: auto;
         margin-right: auto;
     }
-    
     .orga {
         text-align: center;
-        display: flex ;
+        display: flex;
         flex-direction: column;
     }
 }
 
-#title_orga, .title_orga {
->>>>>>> 8ac44b39f220eca683d43a8f04f18a3241d4b8f3
+#title_orga,
+.title_orga {
     margin-bottom: 50px;
     margin-left: 5%;
     margin-top: 50px;
