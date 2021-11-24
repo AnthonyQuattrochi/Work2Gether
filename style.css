@@ -466,6 +466,7 @@ footer {
 
   #formation h2 {
       text-decoration: none;
+      text-shadow: none;
   }
 
   #formation p {
