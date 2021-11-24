@@ -138,6 +138,7 @@ hr {
 /* -------------------------------------- EVALUATION -------------------------------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Rubik:wght@500&display=swap');
+
 #evaluation {
     display: flex;
     font-family: 'Outfit', sans-serif;
