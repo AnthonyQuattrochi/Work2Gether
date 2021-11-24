@@ -11,56 +11,56 @@
 
 <body>
     <header>
-        <div class="LogoTitre">
-            <img src="./img/LogoW2G_2.png" alt="LogoW2G">
-        </div>
-        <div class="menu">
-
-            <a href="index.html">
-                <button class="boutonMenu">
-                <div>Accueil</div>
-            </button>
-            </a>
-
-            <a href="formation.html">
-                <button class="boutonMenu">
-                <div>Formation</div>
-            </button>
-            </a>
-            <a href="tools.html">
-                <button class="boutonMenu">
-                <div>Outils</div>
-            </button>
-            </a>
-            <button class="boutonMenu" id="active">
-                <div>Organisation</div>
-            </button>
-            <a href="technologies.html">
-                <button class="boutonMenu">
-                    <div>Technologies</div>
-                </button>
-            </a>
-        </div>
+        <script src="navbar.js"></script>
     </header>
     <h1 id="title_orga">Organisation</h1>
     <div class="index_articles">
+        <h2 class="title_orga">Méthode SCRUM</h2>
         <article class="orga">
-            <h2>Méthode SCRUM</h2>
-            <img src="img/down-arrow.png" alt="down-arrow" class="arrow-dropping" />
             <img src="img/scrum.png" alt="orga" class="img_orga" />
-            <p class="p_orga">Nous avons choisi le framework Scrum pour notre gestion de projet agile. <br> La méthode Scrum est une méthode de gestion / développement produit ou projet, utilisée dans le domaine du développement informatique (logiciels, services, applications
-                mobiles, sites web, etc.). Dans le cadre de la méthode Scrum, le produit logiciel est développé ou évolue sous formes de sprints qui sont des phases de développement de quelques semaines qui se concentrent généralement sur quelques fonctionnalités,
-                voire parfois sur une fonctionnalité unique. Les fonctionnalités à développer lors des sprints sont notamment répertoriées et priorisées dans le cadre d'un backlog produit. <br/> Au niveau organisationnel, le développement n'est pas forcément
-                géré par un chef de projet, mais plutôt coordonné par un "scrum master" qui joue un rôle d'intermédiaire entre l'équipe de développement et le responsable produit (product owner). <br/>
-                <br/> La méthode Scrum fait partie des méthodes de gestion de projet dites "agiles" et vues comme des alternatives à la gestion de projet "traditionnelle" davantage planifiée et structurée sur de longues périodes.</p>
+            <div class="p_orga">
+                <p>Nous avons choisi le framework Scrum pour notre gestion de projet agile. <br> La méthode Scrum est
+                    une méthode de gestion / développement produit ou projet, utilisée dans le domaine du développement
+                    informatique (logiciels, services, applications
+                    mobiles, sites web, etc.). Dans le cadre de la méthode Scrum, le produit logiciel est développé ou
+                    évolue sous formes de sprints qui sont des phases de développement de quelques semaines qui se
+                    concentrent généralement sur quelques fonctionnalités,
+                    voire parfois sur une fonctionnalité unique. Les fonctionnalités à développer lors des sprints sont
+                    notamment répertoriées et priorisées dans le cadre d'un backlog produit. <br /> Au niveau
+                    organisationnel, le développement n'est pas forcément
+                    géré par un chef de projet, mais plutôt coordonné par un "scrum master" qui joue un rôle
+                    d'intermédiaire entre l'équipe de développement et le responsable produit (product owner). <br />
+                    <br /> La méthode Scrum fait partie des méthodes de gestion de projet dites "agiles" et vues comme
+                    des alternatives à la gestion de projet "traditionnelle" davantage planifiée et structurée sur de
+                    longues périodes.
+                </p>
+            </div>
         </article>
+        <h2 class="title_orga">Trello et Scrum Board</h2>
         <article class="orga reveal">
-            <h2>Trello et Scrum Board</h2>
-            <img src="img/down-arrow.png" alt="down-arrow" class="arrow-dropping" />
-            <p class="p_orga">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci eu lobortis elementum nibh tellus molestie nunc non. A diam sollicitudin tempor id eu nisl nunc mi. Augue lacus
-                viverra vitae congue eu consequat ac felis. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Feugiat in fermentum posuere urna nec. Et leo duis ut diam quam nulla porttitor. Nulla facilisi cras fermentum odio eu feugiat
-                pretium. Massa tincidunt nunc pulvinar sapien et ligula. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque. Ut faucibus pulvinar elementum integer enim neque volutpat. Dignissim cras tincidunt lobortis feugiat vivamus at
-                augue eget arcu.</p>
+            <div class="p_orga">
+                <p>Pour favoriser l’entente et la cohésion au sein de l’équipe,
+                    nous avons instauré un Scrum Board sur le site Trello. Il s’agit d’un site assez trivial à mettre en
+                    place dans
+                    une équipe et simple à utiliser, permettant de visualiser l’avancement de tâches et des US.<br />
+                    <br />
+                    Notre Trello est décomposé en 6 colonnes distinctes : <br />
+                <ul>
+                    <li>Ready : “Definition of Ready” qui regroupe les US déjà pensé mais qui ne sont pas encore
+                        emmenées dans le sprint</li>
+                    <li>To do : Signifiant les tâches à faire dans le sprint qui ne sont pas encore prise par quelqu’un
+                    </li>
+                    <li>Work in progress : Les tâches forcément liées à 1 ou plusieurs personnes qui sont en cours de
+                        réalisation</li>
+                    <li>Done : “Definition of Done” qui signifie une tâche terminée mais qui n’est pas encore revue par
+                        l’équipe de développement ou le client</li>
+                    <li>Closed : représente les tâches terminées et revues (archivées)</li>
+                </ul>
+                Nous avons ajouté des étiquettes pour chaque module du site : Accueil, Organisation… Puis pour chaque
+                type de travail : Dev, Rédaction...
+                Et enfin pour la priorité de la tâche : High priority et Low Priority
+                </p>
+            </div>
             <img src="img/Orga.PNG" alt="orga" class="img_orga" />
         </article>
     </div>
