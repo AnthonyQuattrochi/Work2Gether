@@ -215,6 +215,22 @@ hr {
     font-weight: bold;
 }
 
+#evaluation .pop {
+    font-size: 20px; 
+    color: red; 
+    text-shadow: none;
+    text-decoration: none;
+    color: #ffcc00; 
+    margin-left: 10px; 
+    transition-duration: 0.3s;
+}
+
+#evaluation .pop:hover {
+    color: #333333; 
+    transition-duration: 0.5s;
+}
+
+
 
 /*-------------------------- ACCUEIL --------------------------- */
 
@@ -535,6 +551,11 @@ footer {
       border-bottom-left-radius: 8px;
       background-image: url("https://images.unsplash.com/photo-1542596594-649edbc13630?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGZ1bnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60");
       background-size: cover;
+  }
+
+  .bloc_1:hover {
+      filter: brightness(50%); 
+      
   }
 
   .bloc_2 {
