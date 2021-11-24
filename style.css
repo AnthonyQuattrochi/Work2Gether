@@ -7,22 +7,63 @@ body {
     color: rgb(51, 51, 51);
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 8px;
+    }
+}
+
 header a {
     text-decoration: none;
 }
 
 
 /* --------------------------------------- Organisation ---------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Dosis:300,400);
+  
+  /* effect-shine */
+  h2.effect-shine:hover {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+  }
+  
+  @-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    
+    to {
+      -webkit-mask-position: -50%;
+    }
+  }
 
-#title_orga {
-    margin-bottom: 50px;
-    margin-left: 5%;
+
+@media only screen and (max-width: 600px) {
+    .img_orga {
+        display: none;
+    }
+    img[src="img/Orga.PNG"] {
+        margin-left: 50px;
+        width: 74.24px;
+        height: 35.44px;
+    }
+    .p_orga {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .orga {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-.arrow-dropping {
-    width: 2%;
-    height: 2%;
-    float: right;
+#title_orga,
+.title_orga {
+    margin-bottom: 50px;
+    margin-left: 5%;
+    margin-top: 50px;
 }
 
 .orga {
@@ -44,14 +85,18 @@ header a {
 
 img[src="img/scrum.png"] {
     margin-right: 50px;
-    width: 800px;
-    height: 314px;
+    width: 500px;
+    height: 196.25px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 img[src="img/Orga.PNG"] {
     margin-left: 50px;
     width: 742.4px;
     height: 354.4px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .p_orga {
@@ -78,6 +123,15 @@ img[src="img/Orga.PNG"] {
 /* --------------------------------------- End Organisation ---------------------------------------------- */
 
 header {
+    position: fixed;
+    background-color: #F0F0F0;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    box-shadow: 0px 2px 3px rgb(0 0 0 / 50%);
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
@@ -87,7 +141,7 @@ header {
 
 hr {
     border-style: solid;
-    border-color: black;
+    border-color: white;
     width: 200px;
     border-width: 0.5px;
     box-shadow: 9px 9px 18px #3b3a3a, -9px -9px 18px #646464;
@@ -109,21 +163,23 @@ hr {
 
 
 /* ----------------------- NAVIGATION ---------------------------*/
-.boutonMenu{
+
+.boutonMenu {
     transition: 0.2s;
     display: flex;
     justify-content: center;
     border: none;
     margin: 20px;
     height: 40px;
-    font-size: 1.333rem;
+    font-size: 21px;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
     border-radius: 50px;
     background: #F0F0F0;
-    box-shadow: 9px 9px 18px #3b3a3a, -9px -9px 18px #646464;
+    box-shadow: 6px 6px 12px #cccccc, -6px -6px 12px #ffffff;
 }
-.boutonMenu:not(#active):hover{
-    box-shadow: 9px 9px 18px #3b3a3a, -9px -9px 18px #646464;
+
+.boutonMenu:not(#active):hover {
+    box-shadow: inset 6px 6px 12px #cccccc, inset -6px -6px 12px #ffffff;
 }
 
 .boutonMenu div {
@@ -136,7 +192,6 @@ hr {
 /* -------------------------------------- EVALUATION -------------------------------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Rubik:wght@500&display=swap');
-
 #evaluation {
     display: flex;
     font-family: 'Outfit', sans-serif;
@@ -144,8 +199,8 @@ hr {
     margin: 0px auto;
     border-radius: 20px;
     margin-top: 5%;
-    padding: 2%; 
-    box-shadow: 9px 9px 18px #3b3a3a, -9px -9px 18px #646464;
+    padding: 2%;
+    box-shadow: inset 6px 6px 12px #cccccc, inset -6px -6px 12px #ffffff;
 }
 
 #evaluation .neumorAvatar {
@@ -155,7 +210,7 @@ hr {
     margin-top: 6%;
     border-radius: 123px;
     background: #F0F0F0;
-    box-shadow: 9px 9px 18px #3b3a3a, -9px -9px 18px #646464;
+    box-shadow: inset 6px 6px 12px #cccccc, inset -6px -6px 12px #ffffff;
 }
 
 #evaluation .neumorphisme_img {
@@ -190,16 +245,31 @@ hr {
     background-color: #ffcc00;
     border-radius: 10px;
     margin: 0px auto;
-    font-size: 1.333rem; 
-    display: flex; 
-    justify-content: center; 
+    font-size: 1.333em;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-
 
 #evaluation span {
     font-weight: bold;
 }
+
+#evaluation .pop {
+    font-size: 20px; 
+    color: red; 
+    text-shadow: none;
+    text-decoration: none;
+    color: #ffcc00; 
+    margin-left: 10px; 
+    transition-duration: 0.3s;
+}
+
+#evaluation .pop:hover {
+    color: #333333; 
+    transition-duration: 0.5s;
+}
+
 
 
 /*-------------------------- ACCUEIL --------------------------- */
@@ -209,9 +279,16 @@ hr {
     flex-direction: column;
     justify-content: center;
     padding-top: 200px;
-    padding-bottom: 150px;
+    padding-bottom: 200px;
     box-shadow: 9px 9px 18px #3b3a3a, -9px -9px 18px #646464;
+    background-image: url("./img/imageCampus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
     background-color: #fafafa;
+    overflow: hidden;
+    color: white;
+    position: relative;
 }
 
 #index_introduction div {
@@ -219,45 +296,70 @@ hr {
 }
 
 #TitreW2G {
-    text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
+    text-shadow: 2px 2px 4px rgb(255 255 255 / 25%);
     font-size: 4.209em;
+}
+
+#TitreW2G::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+#TitreW2G:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#TitreW2G::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: hsl(200 100% 80%);
+    z-index: -1;
+    transition: transform .3s ease;
 }
 
 #keyword {
     text-align: center;
-    font-size: 1.333rem;
+    font-size: 1.333em;
 }
 
-#accroche {
+#index_accroche {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     padding-top: 100px;
-    font-size: 1.333rem;
 }
 
 
 /* --------------------------------------- Taille du texte ---------------------------------------*/
 
 h1 {
-    size: 4.209rem;
+    font-size: 4.209em;
 }
 
 h2 {
-    size: 3.157rem;
+    font-size: 2.369em;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
 }
 
 h3 {
-    size: 2.369rem;
+    font-size: 1.777em;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
 }
 
 h4 {
-    size: 1.777rem;
+    font-size: 1.333em;
 }
 
 p {
-    size: 1rem;
+    font-size: 1.25em;
 }
 
 
@@ -269,8 +371,8 @@ p {
     margin: 0px auto;
     border-radius: 20px;
     margin-top: 5%;
-    padding: 2%; 
-    box-shadow: 9px 9px 18px #3b3a3a, -9px -9px 18px #646464;
+    padding: 2%;
+    box-shadow: inset 6px 6px 12px #cccccc, inset -6px -6px 12px #ffffff;
 }
 
 #first-block {
@@ -292,7 +394,58 @@ p {
     border-radius: 123px;
     background: #e0e0e0;
     box-shadow: 9px 9px 18px #3b3a3a, -9px -9px 18px #646464;
+    box-shadow: 25px 25px 50px #cacaca, -25px -25px 50px #f6f6f6;
 }
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.full_door {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 164px;
+    border-radius: 30px;
+    background: linear-gradient(225deg, #f0f0f0, #cacaca);
+    box-shadow: -8px 8px 17px #898989, 8px -8px 17px #ffffff;
+}
+
+.frame {
+    height: 120px;
+    width: 70px;
+    border-start-start-radius: 55px;
+    border-start-end-radius: 55px;
+    border: 4px solid #000;
+    border-bottom: none;
+}
+
+.lock {
+    width: 10px;
+    height: 10px;
+    background: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.door {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 120px;
+    width: 70px;
+    border-start-start-radius: 55px;
+    border-start-end-radius: 55px;
+    background: linear-gradient(145deg, #898989, #c0c0c0);
+    transform-origin: left;
+    transition: transform .45s;
+}
+
+.door:hover {
+    transform: perspective(1200px) rotateY(40deg);
+}
+
 
 /*-----------------------------------------------------------------Zen------------------------------------------------------------------*/
 
@@ -320,16 +473,15 @@ p {
     
 }
 
-#activite div :hover{
+#activite div :hover {
     animation: pulse 1.2s forwards;
     cursor: pointer;
 }
 
 @keyframes pulse {
-    to{
+    to {
         box-shadow: 0 0 0 18px rgba(206, 241, 7, 0.137);
     }
-    
 }
 
 #activite img {
@@ -345,12 +497,13 @@ p {
     text-align: center;
     animation: apparition .8s ease-out;
 }
+
 @keyframes apparition {
-    from{
+    from {
         opacity: 0;
         transform: translateX(-100px);
     }
-    to{
+    to {
         opacity: 1;
         transform: translateY(0px);
     }
@@ -375,7 +528,8 @@ p {
     margin-left: 8px;
 }
 
-/* -----------------------------------------Technologies ---------------------------------------------- */
+
+/* --------------------------------------- Technologies ---------------------------------------------- */
 
 #Technologie main h2 {
     text-align: center;
@@ -383,7 +537,7 @@ p {
 
 #blockflex {
     display: flex;
-    
+    justify-content: space-around;
     text-align: center;
 }
 
@@ -396,6 +550,11 @@ p {
     padding: 25px;
     margin-top: 50px;
     font-size: small;
+}
+
+#blockflex div :last-child {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #Technologie main> :nth-child(2) {
@@ -413,4 +572,112 @@ p {
 #active {
     background: #fafafa;
     
+}
+
+
+/* ----------------------------------- FOOTER -------------------------------------------*/
+
+footer {
+    height: 200px;
+    background-color: rgb(196, 196, 196);
+    margin-top: 5%;
+    box-shadow: inset 7px 7px 14px #bdbdbd;
+}
+
+
+/*----------------------------------SCROLLBAR ---------------------------------- */
+  
+  body::-webkit-scrollbar {
+      width: 15px;
+      height: 15px;
+  }
+  
+  body::-webkit-scrollbar-track-piece  {
+      background-color: #C2D2E4;
+  }
+  
+  body::-webkit-scrollbar-thumb:vertical {
+      height: 30px;
+      background-color: #0A4C95;
+  }
+
+
+  /*------------------------------------FORMATION------------------------------------------ */
+  
+  #formation {
+      width: 80%;  
+      height: auto; 
+      margin:0px auto; 
+      margin-top: 10%; 
+      display: flex;
+  }
+
+  #apprentissage{
+    width: 80%;  
+    height: auto; 
+    margin:0px auto; 
+    margin-top: 10%; 
+    display: flex;
+  }
+
+  #apprentissage div.bloc_1{
+    width: 50%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px; 
+    overflow: hidden;
+  }
+
+  #apprentissage div.bloc_1 img{
+    object-fit: fill;
+    height: 100%;
+  }
+
+  #apprentissage div.bloc_2 {
+    background-color: #ffcc00;
+    width: 80%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 4%;
+    text-align: justify;
+}
+
+  #formation div.bloc_1 {
+      width: 50%;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      background-image: url("https://images.unsplash.com/photo-1542596594-649edbc13630?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGZ1bnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60");
+      background-size: cover;
+  }
+
+  .bloc_1:hover {
+      filter: brightness(50%); 
+      
+  }
+
+  .bloc_2 {
+      background-color: #ffcc00;
+      width: 80%;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      padding: 4%;
+  }
+
+  #formation h2 {
+      text-decoration: none;
+      text-shadow: none;
+  }
+
+  #formation p {
+      text-align: justify;
+  }
+
+/* --------------------------------------- Outils ---------------------------------------------- */
+
+#Outils {
+    margin-top: 100px;
+}
+
+#Outils main {
+    display: flex;
+    flex-direction: column;
 }
