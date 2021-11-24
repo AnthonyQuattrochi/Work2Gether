@@ -325,7 +325,8 @@ p {
 }
 
 #activite div :hover{
-    animation: pulse 1.4s forwards;
+    animation: pulse 1.2s forwards;
+    cursor: pointer;
 }
 
 @keyframes pulse {
