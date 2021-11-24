@@ -6,13 +6,18 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: rgb(51, 51, 51);
 }
-
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 8px;
+    }
+  }
 header a {
     text-decoration: none;
 }
 
 
 /* --------------------------------------- Organisation ---------------------------------------------- */
+
 
 #title_orga, .title_orga {
     margin-bottom: 50px;
@@ -42,6 +47,8 @@ img[src="img/scrum.png"] {
     margin-right: 50px;
     width: 500px;
     height: 196.25px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 img[src="img/Orga.PNG"] {
@@ -80,12 +87,8 @@ header {
     background-color: #F0F0F0;
     width: 100%;
     z-index: 1000;
+    top: 0;
     box-shadow: 0px 2px 3px rgb(0 0 0 / 50%);
-}
-
-object{
-    width: 100%;
-    height: 80px;
 }
 
 .navbar{
@@ -98,7 +101,7 @@ object{
 
 hr {
     border-style: solid;
-    border-color: black;
+    border-color: white;
     width: 200px;
     border-width: 0.5px;
     box-shadow: 0px 2px 3px rgb(0 0 0 / 50%);
@@ -128,7 +131,7 @@ hr {
     border: none;
     margin: 20px;
     height: 40px;
-    font-size: 1.333rem;
+    font-size: 21px;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
     border-radius: 50px;
     background: #F0F0F0;
@@ -202,7 +205,7 @@ hr {
     background-color: #ffcc00;
     border-radius: 10px;
     margin: 0px auto;
-    font-size: 1.333rem;
+    font-size: 1.333em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,55 +223,84 @@ hr {
     flex-direction: column;
     justify-content: center;
     padding-top: 200px;
-    padding-bottom: 150px;
-    box-shadow: 0px 0px 8px rgb(0 0 0 / 33%);
+    padding-bottom: 200px;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 33%);
+    background-image: url("./img/imageCampus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
     background-color: #fafafa;
+    overflow: hidden;
+    color: white;
+    position: relative;
 }
-
 #index_introduction div {
     align-self: center;
 }
 
 #TitreW2G {
-    text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
+    text-shadow: 2px 2px 4px rgb(255 255 255 / 25%);
     font-size: 4.209em;
 }
 
+#TitreW2G::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  #TitreW2G:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  #TitreW2G::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(200 100% 80%);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+
 #keyword {
     text-align: center;
-    font-size: 1.333rem;
+    font-size: 1.333em;
 }
 
-#accroche {
+#index_accroche {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     padding-top: 100px;
-    font-size: 1.333rem;
 }
 
 
 /* --------------------------------------- Taille du texte ---------------------------------------*/
 
 h1 {
-    size: 4.209rem;
+    font-size: 4.209em;
 }
 
 h2 {
-    size: 3.157rem;
+    font-size: 2.369em;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
 }
 
 h3 {
-    size: 2.369rem;
+    font-size: 1.777em;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
 }
 
 h4 {
-    size: 1.777rem;
+    
+    font-size: 1.333em;
 }
 
 p {
-    size: 1rem;
+    font-size: 1.333em;
 }
 
 
