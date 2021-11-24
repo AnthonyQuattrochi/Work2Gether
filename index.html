@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="javascript.js"></script>
-    <script src = "reveal.js" defer></script>
+    <script src="reveal.js" defer></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,11 +21,9 @@
             <img src="./img/LogoW2G_2.png" alt="LogoW2G">
         </div>
         <div class="menu">
-            <a href="index.html">
-                <button class="boutonMenu">
+            <button class="boutonMenu" id="active">
                 <div>Accueil</div>
             </button>
-            </a>
             <a href="formation.html">
                 <button class="boutonMenu">
                 <div>Formation</div>
@@ -74,11 +72,21 @@
                 </p>
 
                 <div class="flex">
-                    <div class="icon"><p>1</p></div>
-                    <div class="icon"><p>2</p></div>
-                    <div class="icon"><p>3</p></div>
-                    <div class="icon"><p>4</p></div>
-                    <div class="icon"><p>5</p></div>
+                    <div class="icon">
+                        <p>1</p>
+                    </div>
+                    <div class="icon">
+                        <p>2</p>
+                    </div>
+                    <div class="icon">
+                        <p>3</p>
+                    </div>
+                    <div class="icon">
+                        <p>4</p>
+                    </div>
+                    <div class="icon">
+                        <p>5</p>
+                    </div>
                 </div>
             </div>
 
@@ -88,10 +96,10 @@
             <h2>Apprentissage à la carte</h2>
             <section id="first-block">
                 <p id="project-content">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis hic culpa voluptatum a temporibus nostrum molestiae, sunt obcaecati aperiam architecto numquam nisi omnis vero nemo soluta eius veritatis voluptates eaque. Lorem ipsum, dolor sit amet
-                    consectetur adipisicing elit. Omnis minus, dolorem ratione eaque corporis odio ipsa voluptates consequuntur reiciendis dignissimos esse modi? Iste accusantium nulla aperiam corrupti porro animi fugit. Lorem ipsum dolor sit, amet consectetur
-                    adipisicing elit. Corporis hic culpa voluptatum a temporibus nostrum molestiae, sunt obcaecati aperiam architecto numquam nisi omnis vero nemo soluta eius veritatis voluptates eaque. Lorem ipsum, dolor sit amet consectetur adipisicing
-                    elit. Omnis minus, dolorem ratione eaque corporis odio ipsa voluptates consequuntur reiciendis dignissimos esse modi? Iste accusantium nulla aperiam corrupti porro animi fugit.
+                    Chez W2G nous vous proposons un apprentissage atypique qui ciblera au mieux vos besoins et envies.<br>
+                    <br>Envie de vous formez autrement et de selectionner vous même vos cours ?<br>
+                    <br>Envie de travailler sur des projets intéressant ,innovants, et professionnel ?<br>
+                    <br>On vous en dit plus par ici.
                 </p>
                 <div>
                     <img src="./img/Groupe-project.jpeg" alt="placeholder">
@@ -100,41 +108,41 @@
         </article>
 
         <article id="well-being" class="reveal">
-            <h1>une vie zen</h1>
+            <h2>Une vie zen</h2>
             <div id="intro">
                 <p>Votre bien-être est notre principale préoccupation. Pour celà nous mettons en place différents outils pour vous rendre la vie dans notre campus plus agréable:</p>
             </div>
-            <div id ="activite" >
-                <div id ="choix">
-                    <img src="./img/choix.png" alt="choix" type="button"onclick="displayPchoix()">
+            <div id="activite">
+                <div id="choix">
+                    <img src="./img/choix.png" alt="choix" type="button" onclick="displayPchoix()">
                 </div>
                 <div id="sondage">
-                    <img src="./img/sondage.png" alt="sondage"  type="button" onclick="displayPsondage()">
+                    <img src="./img/sondage.png" alt="sondage" type="button" onclick="displayPsondage()">
                 </div>
-                <div id="cours" >
-                    <img src="./img/bourse-detudes.png" alt="modcours"type ="button" onclick="displayPcours()">
+                <div id="cours">
+                    <img src="./img/bourse-detudes.png" alt="modcours" type="button" onclick="displayPcours()">
                 </div>
-                    <div id="sport">
-                        <img src="./img/sport.png" alt="sport"  type="button" onclick="displayPsport()" >
-                    </div>
+                <div id="sport">
+                    <img src="./img/sport.png" alt="sport" type="button" onclick="displayPsport()">
+                </div>
 
 
-                    <div id="fete">
-                        <img src="./img/sifflet-de-fete.png" alt="fete"  type="button" onclick="displayPfete()" >
-                    </div>
-
-                    <div id="culture">
-                        <img src="./img/arts.png" alt="culture" alt="culture"  type="button" onclick="displayPculture()">
-                    </div>
-
-                    <div id=repos>
-                        <img src="./img/sieste.png" alt="repos"  type="button" onclick="displayPrepos()">
-                    </div>
-                    
+                <div id="fete">
+                    <img src="./img/sifflet-de-fete.png" alt="fete" type="button" onclick="displayPfete()">
                 </div>
-                <div>
-                    <h3 id = "pAct"></h3>
+
+                <div id="culture">
+                    <img src="./img/arts.png" alt="culture" alt="culture" type="button" onclick="displayPculture()">
                 </div>
+
+                <div id=repos>
+                    <img src="./img/sieste.png" alt="repos" type="button" onclick="displayPrepos()">
+                </div>
+
+            </div>
+            <div>
+                <h3 id="pAct"></h3>
+            </div>
 
 
 
@@ -144,11 +152,11 @@
 
         </article>
 
-        </div>
+    </div>
 
-        <footer>
+    <footer>
 
-        </footer>
+    </footer>
 
 </body>
 
