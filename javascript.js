@@ -45,3 +45,9 @@ function displayPsondage() {
     showMessage.style.display = 'block';
  }
  
+ function modeDark() {
+   document.body.classList.toggle("dark");
+   var e=document.getElementsByClassName("boutonMenu");
+   
+
+   }
