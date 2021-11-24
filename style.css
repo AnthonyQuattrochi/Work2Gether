@@ -84,7 +84,7 @@ a {
     border-radius: 20px;
     margin-top: 5%;
     padding: 2%;
-    box-shadow: 9px 9px 18px #3b3a3a, -9px -9px 18px #646464;
+    box-shadow: 6px 6px 12px #cccccc,    -6px -6px 12px #ffffff;
     transition: transform .5s;
 }
 
@@ -137,7 +137,7 @@ header {
     width: 100%;
     z-index: 1000;
     top: 0;
-    box-shadow: 0px 2px 3px rgb(0 0 0 / 50%);
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 25%);
 }
 
 .navbar {
@@ -289,7 +289,7 @@ hr {
     justify-content: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    box-shadow: 9px 9px 18px #3b3a3a, -9px -9px 18px #646464;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 33%);
     background-image: url("./img/imageCampus.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -466,7 +466,7 @@ p {
     border-radius: 20px;
     margin-top: 5%;
     padding: 2%;
-    box-shadow: 9px 9px 18px #3b3a3a, -9px -9px 18px #646464;
+    box-shadow: inset 6px 6px 12px #cccccc, inset -6px -6px 12px #ffffff;
     animation: appear 1s ease-out both;
 }
 
@@ -519,9 +519,7 @@ p {
     }
 }
 /*------------------------------------------ModeSombre---------------------------------------------------*/
-.mode {
-    float:right;
-}
+
 .dark{
     background-color: #4f4f4f;
     color: #e9b60f;
@@ -555,8 +553,8 @@ p {
     display: flex;
     width: 25%;
     border-radius: 50px;
-    background: #e0e0e0;
-    box-shadow: 9px 9px 18px #3b3a3a, -9px -9px 18px #646464;
+    background: #F0F0F0;
+    box-shadow: inset 6px 6px 12px #cccccc, inset -6px -6px 12px #ffffff;
     padding: 25px;
     margin-top: 50px;
     font-size: small;
@@ -573,8 +571,8 @@ p {
     width: 95%;
     padding: 20px;
     border-radius: 50px;
-    background: #e0e0e0;
-    box-shadow: 9px 9px 18px #3b3a3a, -9px -9px 18px #646464;
+    background: #F0F0F0;
+    box-shadow: inset 6px 6px 12px #cccccc, inset -6px -6px 12px #ffffff;
     padding: 25px;
     margin-top: 50px;
 }
@@ -620,6 +618,8 @@ footer {
       margin:0px auto; 
       margin-top: 10%; 
       display: flex;
+      box-shadow: 6px 6px 12px #cccccc, -6px -6px 12px #ffffff;
+      border-radius: 8px;
   }
 
   #apprentissage{
@@ -628,6 +628,8 @@ footer {
     margin:0px auto; 
     margin-top: 10%; 
     display: flex;
+    box-shadow: 6px 6px 12px #cccccc, -6px -6px 12px #ffffff;
+    border-radius: 8px;
   }
 
   #apprentissage div.bloc_1{
