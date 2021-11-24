@@ -797,15 +797,15 @@ body::-webkit-scrollbar-thumb:vertical {
 }
 
 #formation div.bloc_1 {
-    width: 50%;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    background: url("https://images.unsplash.com/photo-1542596594-649edbc13630?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGZ1bnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60");
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    position: relative;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+}
+
+#formation div.bloc_1 img{
+    object-fit: fill;
+    height: 100%;
 }
 
 .citation {
