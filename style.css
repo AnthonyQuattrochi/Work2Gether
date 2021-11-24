@@ -31,6 +31,7 @@ a {
     font-size: 36px;
     transition: 0.3s;
 }
+
 .material-icons:hover {
     transform: scale(130%);
 }
@@ -116,11 +117,24 @@ height:100%;
     font-size: 0.7em;
 }
 
+.footer .material-icons {
+    padding-top: 5px;
+}
+
 .footer #arobase {
     color: #898989;
 }
 
+.footer #mention, .footer #contact {
+    color: #000;
+}
+
 /* --------------------------------------- Organisation ---------------------------------------------- */
+
+#mybody {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
 
 #img_list{
     display: flex;
