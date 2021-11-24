@@ -22,9 +22,14 @@ a {
     text-decoration: none;
 }
 .material-icons {
-    padding-top: 20px;
+    padding-top: 40px;
     color: white;
-    font-size: 48px;
+    font-family: 'Material Icons';
+    font-size: 36px;
+    transition: 0.3s;
+}
+.material-icons:hover {
+    transform: scale(130%);
 }
 
 /* --------------------------------------- Organisation ---------------------------------------------- */
@@ -722,7 +727,7 @@ box-shadow: inset 6px 6px 13px #161616,
     #evaluation{  
         box-shadow: inset 6px 6px 12px #161616,inset -6px -6px 12px #565656;
     }
-    #project{  
+    #project{
         box-shadow: inset 6px 6px 12px #161616,inset -6px -6px 12px #565656;
     }
     #well-being{  
@@ -737,6 +742,26 @@ box-shadow: inset 6px 6px 13px #161616,
     }
     #activite img {
         box-shadow: 6px 6px 12px #161616, -6px -6px 12px #565656;
+    }
+    #formation {
+        color: rgb(51, 51, 51);
+        box-shadow: 10px 10px 20px #161616;
+    }
+    #apprentissage {
+        color: rgb(51, 51, 51);
+        box-shadow: 10px 10px 20px #161616;
+    }
+    .orga{
+        box-shadow:  6px 6px 12px #282828,
+             -6px -6px 12px #444444;
+    }
+    #Technologie main> :nth-child(2){
+        background: #363636;
+        box-shadow: inset 6px 6px 12px #161616,inset -6px -6px 12px #565656;
+    }
+    #blockflex div{
+        background: #363636;
+        box-shadow: inset 6px 6px 12px #161616,inset -6px -6px 12px #565656;
     }
 }
 
