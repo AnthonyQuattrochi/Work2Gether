@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="javascript.js"></script>
+    <script type="text"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="reveal.js" defer></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,11 +18,15 @@
 </head>
 
 <body>
-
+    <div class="mode">
+        Dark mode:            
+        <span class="change" onclick="modeDark()">OFF</span>
+        
+    </div>
     <header>
         <script src="navbar.js"></script>
     </header>
-    
+
     <div id="index_introduction">
         <div id="TitreW2G">Work 2 Gether</div>
         <hr>
@@ -38,7 +44,10 @@
     <div id="anchor_articles" style="padding-top: 60px;"></div>
     
     <div id="index_accroche">
-        <div><h3>Avez-vous envi d’une formation innovante qui vous ressemble ?<br>Au campus Work2Gether nous avons la solution.</h3></div>
+        <div>
+            <h3>Avez-vous envi d’une formation innovante qui vous ressemble ?<br>Au campus Work2Gether nous avons la
+                solution.</h3>
+        </div>
     </div>
 
     <div class="index_articles" id="index_articles">
@@ -50,8 +59,12 @@
             </div>
 
             <div class="column">
-                <h2 id="eval_titre">Un système d'évaluation novateur</h2>
-                <p id="text_eval">Chez W2G, nous pensons que vos <span>compétences</span> importent davantage que vos notes ! </br>A la place, nous vous proposons un système d’évaluation entièrement basé sur vos efforts ! En effet, chaque module possède une série de <span>cinq</span>                    grades correspondant à un niveau de compétence.
+                <h2 id="eval_titre">Un système d'évaluation novateur <a href="formation.html" class="pop"><span>En
+                            savoir plus</span></a></h2>
+                <p id="text_eval">Chez W2G, nous pensons que vos <span>compétences</span> importent davantage que vos
+                    notes ! </br>A la place, nous vous proposons un système d’évaluation entièrement basé sur vos
+                    efforts ! En effet, chaque module possède une série de <span>cinq</span> grades correspondant à un
+                    niveau de compétence.
                 </p>
 
                 <div class="flex">
@@ -75,22 +88,23 @@
 
         </article>
 
-        <article id="project" class="reveal">
+        <article id="project" class="reveal" >
             <h2>Apprentissage à la carte</h2>
             <section id="first-block">
                 <p id="project-content">
-                    Chez W2G nous vous proposons un apprentissage atypique qui ciblera au mieux vos besoins et envies.<br>
-                    <br>Envie de vous formez autrement et de selectionner vous même vos cours ?<br>
-                    <br>Envie de travailler sur des projets intéressant ,innovants, et professionnel ?<br>
+                    Chez W2G nous vous proposons un <b>apprentissage atypique</b> qui ciblera au mieux vos besoins et
+                    envies.<br>
+                    <br>Envie de vous formez autrement et de <b>selectionner vous même</b> vos cours ?<br>
+                    <br>Envie de travailler sur des <b>projets innovants</b>, intéressant, et professionnel ?<br>
                     <br>On vous en dit plus de <b>l'autre côté de la porte.</b>
                 </p>
                 <div>
                     <img src="./img/Groupe-project.jpeg" alt="placeholder">
                 </div>
             </section>
-            <div class ='wrapper'>
+            <div class='wrapper'>
                 <div class="full_door">
-                    <a href='formation.html'>
+                    <a href='formation.html #apprentissage'>
                         <div class="frame">
                             <div class="door">
                                 <div class="lock"></div>
@@ -101,36 +115,37 @@
             </div>
         </article>
 
-        <article id="well-being" class="reveal">
+        <article id="well-being" class="reveal" class="activ">
             <h2>Une vie zen</h2>
             <div id="intro">
-                <p>Votre bien-être est notre principale préoccupation. Pour celà nous mettons en place différents outils pour vous rendre la vie dans notre campus plus agréable:</p>
+                <p>Votre bien-être est notre principale préoccupation. Pour celà nous mettons en place différents outils
+                    pour vous rendre la vie dans notre campus plus agréable:</p>
             </div>
-            <div id="activite">
+            <div id="activite" >
                 <div id="choix">
-                    <img src="./img/choix.png" alt="choix" type="button" onclick="displayPchoix()">
+                    <img src="./img/choix.png" alt="choix" type="button" class="activ" onclick="displayPchoix()">
                 </div>
                 <div id="sondage">
-                    <img src="./img/sondage.png" alt="sondage" type="button" onclick="displayPsondage()">
+                    <img src="./img/sondage.png" alt="sondage" class="activ" type="button" onclick="displayPsondage()">
                 </div>
                 <div id="cours">
-                    <img src="./img/bourse-detudes.png" alt="modcours" type="button" onclick="displayPcours()">
+                    <img src="./img/bourse-detudes.png" alt="modcours" class="activ" type="button" onclick="displayPcours()">
                 </div>
                 <div id="sport">
-                    <img src="./img/sport.png" alt="sport" type="button" onclick="displayPsport()">
+                    <img src="./img/sport.png" alt="sport" type="button" class="activ" onclick="displayPsport()">
                 </div>
 
 
                 <div id="fete">
-                    <img src="./img/sifflet-de-fete.png" alt="fete" type="button" onclick="displayPfete()">
+                    <img src="./img/sifflet-de-fete.png" alt="fete" class="activ" type="button" onclick="displayPfete()">
                 </div>
 
                 <div id="culture">
-                    <img src="./img/arts.png" alt="culture" alt="culture" type="button" onclick="displayPculture()">
+                    <img src="./img/arts.png" alt="culture" alt="culture" class="activ" type="button" onclick="displayPculture()">
                 </div>
 
                 <div id=repos>
-                    <img src="./img/sieste.png" alt="repos" type="button" onclick="displayPrepos()">
+                    <img src="./img/sieste.png" alt="repos" type="button" class="activ" onclick="displayPrepos()">
                 </div>
 
             </div>
@@ -145,6 +160,8 @@
         <article id="futur">
 
         </article>
+
+       
 
     </div>
 
