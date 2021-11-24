@@ -600,21 +600,6 @@ footer {
   #formation p {
       text-align: justify;
   }
-  
-
-body::-webkit-scrollbar {
-    width: 15px;
-    height: 15px;
-}
-
-body::-webkit-scrollbar-track-piece {
-    background-color: #C2D2E4;
-}
-
-body::-webkit-scrollbar-thumb:vertical {
-    height: 30px;
-    background-color: #0A4C95;
-}
 
 /* --------------------------------------- Outils ---------------------------------------------- */
 
