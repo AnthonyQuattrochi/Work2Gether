@@ -601,17 +601,18 @@ footer {
 /*----------------------------------SCROLLBAR ---------------------------------- */
 
 body::-webkit-scrollbar {
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 2px;
 }
 
 body::-webkit-scrollbar-track-piece {
-    background-color: #C2D2E4;
+    background-color: #c2d2e400;
 }
 
 body::-webkit-scrollbar-thumb:vertical {
-    height: 30px;
-    background-color: #0A4C95;
+    height: 10px;
+    border-radius: 30px;
+    background-color: #ffcc00;
 }
 
 
