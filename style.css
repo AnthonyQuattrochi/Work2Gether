@@ -321,7 +321,7 @@ h4 {
 }
 
 p {
-    font-size: 1.333em;
+    font-size: 1.25em;
 }
 
 
@@ -334,7 +334,7 @@ p {
     border-radius: 20px;
     margin-top: 5%;
     padding: 2%;
-    box-shadow: inset 2px 5px 18px #e0e0e0, inset -5px -5px 18px #fbfbfb;
+    box-shadow: inset 6px 6px 12px #cccccc, inset -6px -6px 12px #ffffff;
 }
 
 #first-block {
@@ -358,6 +358,55 @@ p {
     box-shadow: 25px 25px 50px #cacaca, -25px -25px 50px #f6f6f6;
 }
 
+.wrapper{
+    display: flex;
+    justify-content: center;
+    
+}
+.full_door{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 164px;
+    border-radius: 30px;
+    background: linear-gradient(225deg, #f0f0f0, #cacaca);
+    box-shadow:  -8px 8px 17px #898989,
+                 8px -8px 17px #ffffff;
+}
+
+  .frame{
+    height: 120px;
+    width: 70px;
+    border-start-start-radius: 55px;
+    border-start-end-radius: 55px;
+    border: 4px solid #000;
+    border-bottom: none;
+  }
+
+  .lock{
+    width: 10px;
+    height: 10px;
+    background: rgb(0,0,0);
+    border-radius: 20px;
+  }
+
+  .door{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 120px;
+    width: 70px;
+    border-start-start-radius: 55px;
+    border-start-end-radius: 55px;
+    background: linear-gradient(145deg, #898989, #c0c0c0);
+    transform-origin: left;
+    transition: transform .45s;
+    
+  }
+  .door:hover{
+    transform: perspective(1200px) rotateY(40deg);
+  }
 
 /*-----------------------------------------------------------------Zen------------------------------------------------------------------*/
 
@@ -494,10 +543,10 @@ footer {
   /*------------------------------------FORMATION------------------------------------------ */
   
   #formation {
-      width: 90%;  
-      height: 600px; 
+      width: 80%;  
+      height: auto; 
       margin:0px auto; 
-      margin-top: 5%; 
+      margin-top: 10%; 
       display: flex;
   }
 
@@ -519,6 +568,7 @@ footer {
 
   #formation h2 {
       text-decoration: none;
+      text-shadow: none;
   }
 
   #formation p {
