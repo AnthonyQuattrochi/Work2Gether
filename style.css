@@ -34,12 +34,6 @@ body {
     transition: 0.1s;
 }
 
-@media only screen and (min-width: 1200px) {
-    .buttonHide {
-        display: none;
-    }
-}
-
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
     body {
         font-size: 12px;
@@ -63,30 +57,6 @@ body {
 
 .buttonHide {
     background-color: red;
-}
-
-@media only screen and ( max-width: 600px) {
-    body {
-        font-size: 8px;
-    }
-    .LogoTitre {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .navbar {
-        margin-left: auto;
-        margin-right: auto;
-        flex-wrap: wrap;
-        justify-content: center;
-        display: flex;
-    }
-    .menu {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .boutonMenu {
-        width: 200px;
-    }
 }
 
 a {
@@ -205,29 +175,6 @@ a .material-icons:hover {
     color: #000;
 }
 
-@media only screen and (max-width: 800px) {
-    .footer {
-        height: 5em;
-    }
-    #img_list img {
-        display: none;
-    }
-    .footer:hover {
-        height: 25em;
-    }
-    .footer #cont {
-        right: 100px;
-    }
-    .footer_center {
-        width: 350px;
-    }
-    .footer p {
-        font-size: 0.9em;
-    }
-    .footer .material-icons {
-        padding-top: 0;
-    }
-}
 
 
 /* --------------------------------------- Organisation ---------------------------------------------- */
@@ -848,8 +795,8 @@ p {
 
 #blockflex div {
     display: flex;
-    width: 25%;
     border-radius: 50px;
+    width: 25%;
     box-shadow: inset 6px 6px 12px var(--shadow-value-1), inset -6px -6px 12px var(--shadow-value-2);
     padding: 25px;
     margin-top: 50px;
@@ -859,6 +806,7 @@ p {
 }
 
 #blockflex div :last-child {
+    flex-direction: column;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -872,6 +820,20 @@ p {
     box-shadow: inset 6px 6px 12px var(--shadow-value-1), inset -6px -6px 12px var(--shadow-value-2);
     padding: 25px;
     margin-top: 50px;
+}
+
+#blockflex :last-child :last-child {
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 50px;
+    background: var(--bg-color);
+    box-shadow: 6px 6px 12px var(--shadow-value-1), -6px -6px 12px var(--shadow-value-2);
+}
+
+.neoRond {
+    margin: 0;
+    width: 50px;
+    height: 50px;
 }
 
 #active {
@@ -1045,4 +1007,62 @@ body::-webkit-scrollbar-thumb:vertical {
 .index_articles .icon:hover,.index_articles .icon:focus{
     background:rgba(0,0,0,.4);
     box-shadow:0 1px 0 rgba(255,255,255,.4);
+}
+@media only screen and ( max-width: 600px) {
+    header {
+        position: relative;
+    }
+    body {
+        margin-top: 0px;
+        font-size: 8px;
+    }
+    .LogoTitre {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navbar {
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+    }
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .boutonMenu {
+        width: 200px;
+    }
+    .p_orga {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .footer {
+        height: 5em;
+    }
+    #img_list img {
+        display: none;
+    }
+    .footer:hover {
+        height: 25em;
+    }
+    .footer #cont {
+        right: 100px;
+    }
+    .footer_center {
+        width: 350px;
+    }
+    .footer p {
+        font-size: 0.9em;
+    }
+    .footer .material-icons {
+        padding-top: 0;
+    }
+    
+    .p_orga {
+        width: 90%;
+    }
 }
