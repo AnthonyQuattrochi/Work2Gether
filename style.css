@@ -849,8 +849,8 @@ p {
     margin-top: auto;
     margin-bottom: auto;
     border-radius: 50px;
-    background: linear-gradient(145deg, #3a3a3a, #313131);
-    box-shadow: 6px 6px 12px #272727, -6px -6px 12px #454545;
+    background: var(--bg-color);
+    box-shadow: 6px 6px 12px var(--shadow-value-1), -6px -6px 12px var(--shadow-value-2);
 }
 
 .neoRond {
