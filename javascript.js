@@ -2,14 +2,13 @@ var cpt_ea = 0;
 
 function playEasterEgg() {
     console.log(cpt_ea);
-    if(cpt_ea > 2){
+    if (cpt_ea > 2) {
         window.location.href = "https://www.youtube.com/watch?v=cvh0nX08nRw";
         cpt_ea = 0;
-    }else if(cpt_ea > 1){
+    } else if (cpt_ea > 1) {
         document.getElementById("LogoEA").src = "img/troll.png";
         cpt_ea++;
-    }else
-    {
+    } else {
         cpt_ea++;
     }
 }
@@ -54,7 +53,7 @@ function displayPrepos() {
     const showMessage = document.getElementById('pAct');
     showMessage.innerHTML = 'Nous disposons également de nombreuses salles de repos un peu partout dans le campus, car nous avons conscience qu’un cerveau bien reposé est plus productif.';
     showMessage.style.display = 'block';
- } 
+}
 
 function showStory() {
     var x = document.getElementById("StoryHide");
@@ -90,4 +89,14 @@ function hideAll() {
     showStory();
     showImpact()
     showLean();
+}
+
+function hideMenu() {
+    $(".menu").toggle("hide");
+}
+
+function onloadMenu() {
+    if ($("body").width() < 600) {
+        hideMenu();
+    }
 }
