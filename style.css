@@ -467,7 +467,6 @@ input[type=checkbox] {
 /* -------------------------------------- EVALUATION -------------------------------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Rubik:wght@500&display=swap');
-
 #evaluation {
     display: flex;
     width: 80%;
@@ -836,6 +835,7 @@ p {
 
 #blockflex {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
 }
@@ -847,6 +847,8 @@ p {
     box-shadow: inset 6px 6px 12px var(--shadow-value-1), inset -6px -6px 12px var(--shadow-value-2);
     padding: 25px;
     margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
     font-size: small;
 }
 
@@ -1041,4 +1043,8 @@ body::-webkit-scrollbar-thumb:vertical {
 .div_tools {
     width: 80%;
     margin: 0px auto;
+}
+
+.div_tools:last-child {
+    margin-bottom: 5%;
 }
