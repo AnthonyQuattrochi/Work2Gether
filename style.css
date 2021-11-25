@@ -1035,3 +1035,7 @@ body::-webkit-scrollbar-thumb:vertical {
     width: 80%;
     margin: 0px auto;
 }
+
+.div_tools:last-child {
+    margin-bottom: 5%;
+}
