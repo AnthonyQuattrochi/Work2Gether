@@ -1041,3 +1041,8 @@ body::-webkit-scrollbar-thumb:vertical {
 .div_tools:last-child {
     margin-bottom: 5%;
 }
+
+.index_articles .icon:hover,.index_articles .icon:focus{
+    background:rgba(0,0,0,.4);
+    box-shadow:0 1px 0 rgba(255,255,255,.4);
+}
