@@ -156,6 +156,12 @@ a .material-icons:hover {
     color: #000;
 }
 
+@media only screen and (max-width: 600px){
+    #mybody {
+        padding-bottom: 500px;
+    }
+}
+
 /* --------------------------------------- Organisation ---------------------------------------------- */
 
 #mybody {
@@ -185,22 +191,13 @@ a .material-icons:hover {
 }
 
 
-/* effect-shine */
-
-h2.effect-shine:hover {
-    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
-    -webkit-mask-size: 200%;
-    animation: shine 2s infinite;
-}
-
-
 /* --------------------------------------- Organisation ---------------------------------------------- */
 
 @import url(https://fonts.googleapis.com/css?family=Dosis:300,400);
 
 /* effect-shine */
 
-h2.effect-shine:hover {
+h2.effect-shine {
     -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
     -webkit-mask-size: 200%;
     animation: shine 2s infinite;
@@ -227,6 +224,8 @@ h2.effect-shine:hover {
     .p_orga {
         margin-left: auto;
         margin-right: auto;
+        padding: 0;
+        width: 90%;
     }
     .orga {
         text-align: center;
@@ -235,11 +234,17 @@ h2.effect-shine:hover {
     }
 }
 
-#title_orga,
-.title_orga {
-    margin-bottom: 50px;
+#title_orga {
     margin-left: 5%;
-    margin-top: 50px;
+}
+
+.title_orga_h2_1 {
+    margin : auto;
+}
+
+.title_orga_h2_2 {
+    margin-top : 10%;
+    margin-bottom: 0;
 }
 
 .orga {
@@ -299,7 +304,6 @@ img[src="img/Orga.PNG"] {
     transform: translateY(0);
     transition: 1s;
 }
-
 
 /* --------------------------------------- End Organisation ---------------------------------------------- */
 
@@ -937,6 +941,7 @@ body::-webkit-scrollbar-thumb:vertical {
 
 #Outils {
     margin-top: 100px;
+    text-align: justify;
 }
 
 #Outils main {
@@ -954,4 +959,12 @@ body::-webkit-scrollbar-thumb:vertical {
     margin-top: 5%;
     padding: 2%;
     box-shadow: inset 6px 6px 12px var(--shadow-value-1), inset -6px -6px 12px var(--shadow-value-2);
+    padding: 25px;
+    margin-top: 50px;
+    font-size: small;
+}
+
+.div_tools {
+    width: 80%; 
+    margin: 0px auto;
 }

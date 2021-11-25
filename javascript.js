@@ -1,4 +1,18 @@
+var cpt_ea = 0;
 
+function playEasterEgg() {
+    console.log(cpt_ea);
+    if(cpt_ea > 2){
+        window.location.href = "https://www.youtube.com/watch?v=cvh0nX08nRw";
+        cpt_ea = 0;
+    }else if(cpt_ea > 1){
+        document.getElementById("LogoEA").src = "img/troll.png";
+        cpt_ea++;
+    }else
+    {
+        cpt_ea++;
+    }
+}
 
 function displayPsondage() {
     const showMessage = document.getElementById('pAct');
