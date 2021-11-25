@@ -1,5 +1,3 @@
-
-
 function displayPsondage() {
     const showMessage = document.getElementById('pAct');
     showMessage.innerHTML = 'Chaque trimestre, sera organisé un sondage pour évaluer votre niveau de morale. Vous serez amenés à nous donner vos ressentis et les axes d’amélioration de l’école W2G pour votre confort et votre bien être au sein du campus.';
@@ -40,7 +38,7 @@ function displayPrepos() {
     const showMessage = document.getElementById('pAct');
     showMessage.innerHTML = 'Nous disposons également de nombreuses salles de repos un peu partout dans le campus, car nous avons conscience qu’un cerveau bien reposé est plus productif.';
     showMessage.style.display = 'block';
- } 
+}
 
 function showStory() {
     var x = document.getElementById("StoryHide");
@@ -76,4 +74,14 @@ function hideAll() {
     showStory();
     showImpact()
     showLean();
+}
+
+function hideMenu() {
+    $(".menu").toggle("hide");
+}
+
+function onloadMenu() {
+    if ($("body").width() < 600) {
+        hideMenu();
+    }
 }
