@@ -34,12 +34,6 @@ body {
     transition: 0.1s;
 }
 
-@media only screen and (min-width: 1200px) {
-    .buttonHide {
-        display: none;
-    }
-}
-
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
     body {
         font-size: 12px;
@@ -848,7 +842,7 @@ p {
 
 #blockflex div {
     display: flex;
-    width: 25%;
+    flex-direction: column;
     border-radius: 50px;
     box-shadow: inset 6px 6px 12px var(--shadow-value-1), inset -6px -6px 12px var(--shadow-value-2);
     padding: 25px;
@@ -859,8 +853,8 @@ p {
 #blockflex div :last-child {
     margin-top: auto;
     margin-bottom: auto;
+    
 }
-
 #Technologie main> :nth-child(2) {
     margin-left: auto;
     margin-right: auto;
@@ -870,6 +864,19 @@ p {
     box-shadow: inset 6px 6px 12px var(--shadow-value-1), inset -6px -6px 12px var(--shadow-value-2);
     padding: 25px;
     margin-top: 50px;
+}
+#blockflex :last-child :last-child {
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #3a3a3a, #313131);
+    box-shadow:  6px 6px 12px #272727,
+                 -6px -6px 12px #454545;    
+}
+.neoRond{
+    margin : 0;
+    width: 50px;
+    height: 50px;
 }
 
 #active {
