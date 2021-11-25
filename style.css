@@ -175,29 +175,6 @@ a .material-icons:hover {
     color: #000;
 }
 
-@media only screen and (max-width: 800px) {
-    .footer {
-        height: 5em;
-    }
-    #img_list img {
-        display: none;
-    }
-    .footer:hover {
-        height: 25em;
-    }
-    .footer #cont {
-        right: 100px;
-    }
-    .footer_center {
-        width: 350px;
-    }
-    .footer p {
-        font-size: 0.9em;
-    }
-    .footer .material-icons {
-        padding-top: 0;
-    }
-}
 
 
 /* --------------------------------------- Organisation ---------------------------------------------- */
@@ -1052,5 +1029,36 @@ body::-webkit-scrollbar-thumb:vertical {
     }
     .boutonMenu {
         width: 200px;
+    }
+    .p_orga {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .footer {
+        height: 5em;
+    }
+    #img_list img {
+        display: none;
+    }
+    .footer:hover {
+        height: 25em;
+    }
+    .footer #cont {
+        right: 100px;
+    }
+    .footer_center {
+        width: 350px;
+    }
+    .footer p {
+        font-size: 0.9em;
+    }
+    .footer .material-icons {
+        padding-top: 0;
+    }
+    
+    .p_orga {
+        width: 90%;
     }
 }
