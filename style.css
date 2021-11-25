@@ -938,6 +938,7 @@ body::-webkit-scrollbar-thumb:vertical {
 
 #Outils {
     margin-top: 100px;
+    text-align: justify;
 }
 
 #Outils main {
@@ -951,4 +952,9 @@ body::-webkit-scrollbar-thumb:vertical {
     padding: 25px;
     margin-top: 50px;
     font-size: small;
+}
+
+.div_tools {
+    width: 80%; 
+    margin: 0px auto;
 }
