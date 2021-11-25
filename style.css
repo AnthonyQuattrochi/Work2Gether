@@ -1,6 +1,4 @@
 :root {
-    --primary-color: #302AE6;
-    --secondary-color: #536390;
     --font-color: rgb(51, 51, 51);
     --clear-font-color: rgb(51, 51, 51);
     --const-clear-font-color: rgb(51, 51, 51);
@@ -8,11 +6,10 @@
     --heading-color: #292922;
     --shadow-value-1: #cccccc;
     --shadow-value-2: #ffffff;
+    --title-color: white;
 }
 
 [data-theme="dark"] {
-    --primary-color: #9A97F3;
-    --secondary-color: #818cab;
     --font-color: gainsboro;
     --clear-font-color: gainsboro;
     --const-clear-font-color: rgb(51, 51, 51);
@@ -20,6 +17,7 @@
     --heading-color: #818cab;
     --shadow-value-1: #161616;
     --shadow-value-2: #565656;
+    --title-color: white;
 }
 
 html {
@@ -99,7 +97,7 @@ a .material-icons {
     padding-top: 40px;
     color: white;
     font-family: 'Material Icons';
-    font-size: 36px;
+    font-size: 48px;
     transition: 0.3s;
 }
 
@@ -113,10 +111,10 @@ a .material-icons:hover {
 @import url(https://fonts.googleapis.com/css?family=Dosis:300,400);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
 .footer #button {
-    width: 35px;
-    height: 35px;
+    width: 60px;
+    height: 60px;
     border: #727172 12px solid;
-    border-radius: 35px;
+    border-radius: 60px;
     margin: 0 auto;
     position: relative;
     -webkit-transition: all 1s ease;
@@ -164,7 +162,7 @@ a .material-icons:hover {
 }
 
 .footer #container {
-    margin-top: 5px;
+    margin-top: 2px;
     width: 100%;
     height: 100%;
     position: relative;
@@ -184,6 +182,7 @@ a .material-icons:hover {
 
 .footer_center {
     width: 1000px;
+    /* here */
     float: left;
     left: 0;
     text-align: center;
@@ -204,6 +203,30 @@ a .material-icons:hover {
 .footer #mention,
 .footer #contact {
     color: #000;
+}
+
+@media only screen and (max-width: 800px) {
+    .footer {
+        height: 5em;
+    }
+    #img_list img {
+        display: none;
+    }
+    .footer:hover {
+        height: 25em;
+    }
+    .footer #cont {
+        right: 100px;
+    }
+    .footer_center {
+        width: 350px;
+    }
+    .footer p {
+        font-size: 0.9em;
+    }
+    .footer .material-icons {
+        padding-top: 0;
+    }
 }
 
 
@@ -236,22 +259,13 @@ a .material-icons:hover {
 }
 
 
-/* effect-shine */
-
-h2.effect-shine:hover {
-    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
-    -webkit-mask-size: 200%;
-    animation: shine 2s infinite;
-}
-
-
 /* --------------------------------------- Organisation ---------------------------------------------- */
 
 @import url(https://fonts.googleapis.com/css?family=Dosis:300,400);
 
 /* effect-shine */
 
-h2.effect-shine:hover {
+h2.effect-shine {
     -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
     -webkit-mask-size: 200%;
     animation: shine 2s infinite;
@@ -266,7 +280,7 @@ h2.effect-shine:hover {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .img_orga {
         display: none;
     }
@@ -278,25 +292,35 @@ h2.effect-shine:hover {
     .p_orga {
         margin-left: auto;
         margin-right: auto;
+        padding: 0;
+        width: 90%;
     }
     .orga {
         text-align: center;
         display: flex;
         flex-direction: column;
     }
+    .title_orga_h2_2 {
+        margin-bottom: 2%;
+    }
 }
 
-#title_orga,
-.title_orga {
-    margin-bottom: 50px;
+#title_orga {
     margin-left: 5%;
-    margin-top: 50px;
+}
+
+.title_orga_h2_1 {
+    margin: auto;
+}
+
+.title_orga_h2_2 {
+    margin-top: 10%;
+    margin-bottom: 0;
 }
 
 .orga {
     display: flex;
     margin-bottom: 100px;
-    font-family: 'Outfit', sans-serif;
     margin: 0px auto;
     width: 80%;
     border-radius: 20px;
@@ -338,6 +362,12 @@ img[src="img/Orga.PNG"] {
 .reveal {
     opacity: 0;
     transform: translateY(-30px);
+    width: 80%;
+    margin: 0px auto;
+    border-radius: 20px;
+    margin-top: 5%;
+    padding: 2%;
+    box-shadow: inset 6px 6px 12px var(--shadow-value-1), inset -6px -6px 12px var(--shadow-value-2);
 }
 
 .reveal-visible {
@@ -425,12 +455,19 @@ button {
     margin-bottom: auto;
 }
 
-#checkdark button {
-    margin-top: auto;
-    margin-bottom: auto;
-    border-radius: 10px;
-    width: 16px;
-    height: 16px;
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+}
+
+input[type=checkbox] {
+    -border-radius: 4px;
+    height: 15px;
+    width: 15px;
+    background: var(--clear-font-color);
+    border: 1px solid var(--clear-font-color);
+    border-radius: 5px;
 }
 
 #checkdark i {
@@ -440,7 +477,6 @@ button {
 
 /* -------------------------------------- EVALUATION -------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Rubik:wght@500&display=swap');
 #evaluation {
     display: flex;
     font-family: 'Outfit', sans-serif;
@@ -456,7 +492,7 @@ button {
     height: 200px;
     width: 200px;
     margin: 40px;
-    margin-top: 6%;
+    /* margin-top: 6%;*/
     border-radius: 123px;
     background: var(--bg-color);
     box-shadow: inset 6px 6px 12px var(--shadow-value-1), inset -6px -6px 12px var(--shadow-value-2);
@@ -468,10 +504,6 @@ button {
     border-radius: 100%;
     margin: 25px;
     box-shadow: 9px 9px 18px #3b3a3a, -9px -9px 18px #646464;
-}
-
-#evaluation #eval_titre {
-    font-family: 'Rubik', sans-serif;
 }
 
 #evaluation #text_eval {
@@ -501,6 +533,7 @@ button {
 }
 
 #evaluation span {
+    text-shadow: 0px 0px 2px rgb(0 0 0 / 25%);
     font-weight: bold;
 }
 
@@ -613,6 +646,8 @@ p {
 
 /* --------------------------------------- Article Projet ---------------------------------------*/
 
+
+/*
 #project {
     font-family: 'Outfit', sans-serif;
     width: 80%;
@@ -622,6 +657,7 @@ p {
     padding: 2%;
     box-shadow: inset 6px 6px 12px var(--shadow-value-1), inset -6px -6px 12px var(--shadow-value-2);
 }
+*/
 
 #first-block {
     display: flex;
@@ -697,6 +733,8 @@ p {
 
 /*-----------------------------------------------------------------Zen------------------------------------------------------------------*/
 
+
+/*
 #well-being {
     font-family: 'Outfit', sans-serif;
     width: 80%;
@@ -707,6 +745,7 @@ p {
     box-shadow: inset 6px 6px 12px var(--shadow-value-1), inset -6px -6px 12px var(--shadow-value-2);
     animation: appear 1s ease-out both;
 }
+*/
 
 #activite {
     display: flex;
@@ -758,25 +797,25 @@ p {
 
 /*------------------------------------------Futur--------------------------------------------------------*/
 
+
+/*
 #futur {
-    font-family: 'Outfit', sans-serif;
+    
     width: 80%;
     margin: 0px auto;
     border-radius: 20px;
     margin-top: 5%;
     padding: 2%;
-    box-shadow: inset 6px 6px 12px #cccccc, inset -6px -6px 12px #ffffff;
-    animation: appear 1s ease-out both;
-}
+    box-shadow: inset 6px 6px 12px var(--shadow-value-1), inset -6px -6px 12px var(--shadow-value-2);
+}*/
 
 #futur>div {
-    font-family: 'Outfit', sans-serif;
     width: 80%;
     margin: 0px auto;
     border-radius: 20px;
     margin-top: 5%;
     padding: 2%;
-    box-shadow: inset 6px 6px 12px #cccccc, inset -6px -6px 12px #ffffff;
+    box-shadow: inherit;
     animation: appear 1s ease-out both;
 }
 
@@ -986,6 +1025,7 @@ body::-webkit-scrollbar-thumb:vertical {
 
 #Outils {
     margin-top: 100px;
+    text-align: justify;
 }
 
 #Outils main {
@@ -993,10 +1033,25 @@ body::-webkit-scrollbar-thumb:vertical {
     flex-direction: column;
 }
 
+
+/*
 #Outils main>div {
-    border-radius: 50px;
+}
+*/
+
+.blockNeo {
+    width: 80%;
+    margin: 0px auto;
+    border-radius: 20px;
+    margin-top: 5%;
+    padding: 2%;
     box-shadow: inset 6px 6px 12px var(--shadow-value-1), inset -6px -6px 12px var(--shadow-value-2);
     padding: 25px;
     margin-top: 50px;
     font-size: small;
+}
+
+.div_tools {
+    width: 80%;
+    margin: 0px auto;
 }
