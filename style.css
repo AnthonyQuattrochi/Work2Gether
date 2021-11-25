@@ -751,6 +751,12 @@ p {
     display: flex;
 }
 
+@media screen and (max-width:1300px) {
+    #activite {
+        flex-wrap: wrap;
+    }
+}
+
 #activite div {
     display: flex;
     width: 300px;
