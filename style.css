@@ -27,6 +27,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    padding-bottom: 50px;
     font-size: 16px;
     background: var(--bg-color);
     font-family: 'Open Sans', sans-serif;
@@ -206,14 +207,6 @@ a .material-icons:hover {
 }
 
 
-/* effect-shine */
-
-h2.effect-shine:hover {
-    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
-    -webkit-mask-size: 200%;
-    animation: shine 2s infinite;
-}
-
 
 /* --------------------------------------- Organisation ---------------------------------------------- */
 
@@ -221,7 +214,7 @@ h2.effect-shine:hover {
 
 /* effect-shine */
 
-h2.effect-shine:hover {
+h2.effect-shine {
     -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
     -webkit-mask-size: 200%;
     animation: shine 2s infinite;
@@ -237,8 +230,9 @@ h2.effect-shine:hover {
 }
 
 @media only screen and (max-width: 800px) {
+    
     .img_orga {
-        display: none;
+        margin: auto;
     }
     img[src="img/Orga.PNG"] {
         margin-left: 50px;
@@ -275,25 +269,30 @@ h2.effect-shine:hover {
     margin-top: 5%;
     padding: 2%;
     box-shadow: 6px 6px 12px var(--shadow-value-1), -6px -6px 12px var(--shadow-value-2);
-    transition: transform .5s;
-}
-
-.orga:hover {
-    transform: scale(1.1);
 }
 
 img[src="img/scrum.png"] {
     margin-right: 50px;
+    /*
     width: 500px;
     height: 196.25px;
+    */
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
     margin-top: auto;
     margin-bottom: auto;
 }
 
 img[src="img/Orga.PNG"] {
     margin-left: 50px;
+    /*
     width: 742.4px;
     height: 354.4px;
+    */
+    width: 50%;
+    height: 50%;
     margin-top: auto;
     margin-bottom: auto;
 }
