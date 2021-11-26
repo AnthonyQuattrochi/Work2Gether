@@ -27,6 +27,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    padding-bottom: 50px;
     font-size: 16px;
     background: var(--bg-color);
     font-family: 'Open Sans', sans-serif;
@@ -276,6 +277,8 @@ img[src="img/scrum.png"] {
     width: 500px;
     height: 196.25px;
     */
+    background-color: #F0F0F0;
+    border-radius: 10px;
     width: 50%;
     height: 50%;
     margin-top: auto;
